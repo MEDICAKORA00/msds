@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MSDS 검색</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --bg: #f4f3ef;
+    --surface: #ffffff;
+    --ink: #17181a;
+    --muted: #63666b;
+    --line: #dddad2;
+    --accent: #e8590c;
+    --accent-ink: #ffffff;
+    --accent-soft: #fdebdf;
+    --chip: #ecebe6;
+    --warn: #b42318;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121314;
+      --surface: #1c1d1f;
+      --ink: #f1f0ec;
+      --muted: #a2a4a8;
+      --line: #2e3033;
+      --accent: #ff7a33;
+      --accent-ink: #1a0d05;
+      --accent-soft: #3a2316;
+      --chip: #2a2c2f;
+      --warn: #ff8a80;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-size: 16px; line-height: 1.45;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+  header { padding: 22px 0 14px; }
+  .eyebrow {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; color: var(--muted); letter-spacing: .02em;
+  }
+  .diamond {
+    width: 14px; height: 14px; transform: rotate(45deg);
+    border: 2.5px solid var(--warn); border-radius: 2px; flex: none;
+  }
+  h1 { margin: 6px 0 0; font-size: 24px; font-weight: 800; letter-spacing: -.02em; }
+
+  .place {
+    margin-top: 14px; display: none;
+    background: var(--accent-soft); border-radius: 12px; padding: 12px 14px;
+    align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .place.on { display: flex; }
+  .place small { display: block; font-size: 12px; color: var(--muted); font-weight: 600; }
+  .place strong { font-size: 18px; font-weight: 800; }
+  .place button {
+    flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+    font: inherit; font-size: 14px; font-weight: 600; padding: 8px 12px; border-radius: 999px; cursor: pointer;
+  }
+
+  .searchbar {
+    position: sticky; top: 0; z-index: 5; background: var(--bg);
+    padding: 10px 0 10px;
+  }
+  .field { position: relative; }
+  .field svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+  #q {
+    width: 100%; font: inherit; font-size: 17px; color: var(--ink);
+    background: var(--surface); border: 2px solid var(--line); border-radius: 14px;
+    padding: 14px 44px 14px 44px; outline: none; -webkit-appearance: none;
+  }
+  #q:focus { border-color: var(--accent); }
+  #clear {
+    position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+    width: 32px; height: 32px; border: 0; border-radius: 50%; background: var(--chip); color: var(--muted);
+    font-size: 18px; line-height: 1; cursor: pointer; display: none;
+  }
+  .meta { margin-top: 8px; font-size: 13px; color: var(--muted); }
+
+  ul { list-style: none; margin: 0; padding: 0 0 24px; }
+  li { margin-top: 10px; }
+  .item {
+    display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px;
+  }
+  a.item:active { transform: scale(.995); }
+  a.item:hover { border-color: var(--accent); }
+  .body { flex: 1; min-width: 0; }
+  .name { font-size: 17px; font-weight: 700; letter-spacing: -.01em; word-break: keep-all; overflow-wrap: anywhere; }
+  .sub { margin-top: 3px; font-size: 13.5px; color: var(--muted); }
+  .sub b { font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .chips { margin-top: 7px; display: flex; flex-wrap: wrap; gap: 5px; }
+  .chip { font-size: 12px; font-weight: 600; background: var(--chip); color: var(--muted); padding: 3px 8px; border-radius: 6px; }
+  .open {
+    flex: none; display: flex; align-items: center; gap: 4px;
+    background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: 14px;
+    padding: 10px 12px; border-radius: 10px; white-space: nowrap;
+  }
+  .nofile { flex: none; font-size: 13px; color: var(--muted); }
+  mark { background: transparent; color: var(--accent); font-weight: 800; }
+
+  .state { text-align: center; color: var(--muted); padding: 48px 12px; }
+  .state strong { display: block; color: var(--ink); font-size: 17px; margin-bottom: 6px; }
+  .error { color: var(--warn); }
+
+  footer { border-top: 1px solid var(--line); padding: 18px 0 calc(28px + env(safe-area-inset-bottom)); font-size: 13px; color: var(--muted); }
+  footer p { margin: 2px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow"><span class="diamond" aria-hidden="true"></span><span id="company"></span></div>
+    <h1 id="title">MSDS 물질안전보건자료</h1>
+    <div class="place" id="place">
+      <div><small>현재 장소</small><strong id="placeName"></strong></div>
+      <button type="button" id="allBtn">전체 물질 보기</button>
+    </div>
+  </header>
+
+  <div class="searchbar">
+    <div class="field">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" inputmode="search" autocomplete="off" placeholder="물질명, CAS 번호, 공급사 검색" aria-label="물질 검색">
+      <button id="clear" type="button" aria-label="검색어 지우기">×</button>
+    </div>
+    <div class="meta" id="meta">불러오는 중…</div>
+  </div>
+
+  <ul id="list"></ul>
+
+  <footer>
+    <p id="contact"></p>
+    <p>MSDS는 해당 물질을 취급하기 전에 확인하세요.</p>
+  </footer>
+</div>
+
+<script src="config.js"></script>
+<script src="common.js"></script>
+<script>
+(function () {
+  var CFG = MSDS.config, esc = MSDS.esc;
+  var $ = function (id) { return document.getElementById(id); };
+  var all = [], loc = new URLSearchParams(location.search).get("loc") || "";
+
+  document.title = (CFG.siteTitle || "MSDS") + (loc ? " · " + loc : "");
+  $("title").textContent = CFG.siteTitle || "MSDS";
+  $("company").textContent = CFG.company || "";
+  $("contact").textContent = CFG.contact ? "문의: " + CFG.contact : "";
+
+  // 초성 검색 (예: ㅇㅅㅌ → 아세톤)
+  var CHO = "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ";
+  function chosung(s) {
+    var out = "";
+    for (var i = 0; i < s.length; i++) {
+      var c = s.charCodeAt(i) - 0xAC00;
+      out += (c >= 0 && c < 11172) ? CHO[Math.floor(c / 588)] : s[i];
+    }
+    return out;
+  }
+  var norm = function (s) { return s.toLowerCase().replace(/[\s\-_·.()]/g, ""); };
+  var isCho = function (s) { return /^[ㄱ-ㅎ]+$/.test(s); };
+
+  function setLoc(v) {
+    loc = v;
+    var u = new URL(location.href);
+    if (v) u.searchParams.set("loc", v); else u.searchParams.delete("loc");
+    history.replaceState(null, "", u);
+    document.title = (CFG.siteTitle || "MSDS") + (loc ? " · " + loc : "");
+    render();
+  }
+
+  function highlight(text, tokens) {
+    var t = esc(text);
+    tokens.forEach(function (tok) {
+      if (!tok || isCho(tok)) return;
+      var re = new RegExp("(" + tok.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "gi");
+      t = t.replace(re, "<mark>$1</mark>");
+    });
+    return t;
+  }
+
+  function render() {
+    var raw = $("q").value.trim();
+    $("clear").style.display = raw ? "block" : "none";
+    var tokens = raw.split(/\s+/).filter(Boolean);
+    var nt = tokens.map(norm);
+
+    var pool = loc ? all.filter(function (it) { return it.locs.indexOf(loc) >= 0; }) : all;
+    $("place").classList.toggle("on", !!loc);
+    $("placeName").textContent = loc;
+
+    var res = pool.filter(function (it) {
+      return nt.every(function (t) {
+        if (isCho(t)) return it._cho.indexOf(t) >= 0;
+        return it._hay.indexOf(t) >= 0;
+      });
+    });
+
+    var scope = loc ? "이 장소 물질 " + pool.length + "종" : "전체 " + all.length + "종";
+    $("meta").textContent = raw ? scope + " 중 " + res.length + "건 검색됨" : scope;
+
+    if (loc && !pool.length) {
+      $("list").innerHTML = '<li class="state"><strong>이 장소에 등록된 물질이 없습니다</strong>목록 파일의 보관장소 이름이 QR의 장소 이름과 같은지 확인해 주세요.</li>';
+      return;
+    }
+    if (!res.length) {
+      $("list").innerHTML = '<li class="state"><strong>검색 결과가 없습니다</strong>' +
+        (loc ? '다른 장소에 있을 수 있어요. 위의 “전체 물질 보기”로 찾아보세요.' : '철자나 CAS 번호를 다시 확인해 주세요.') + '</li>';
+      return;
+    }
+
+    var html = res.map(function (it) {
+      var url = MSDS.pdfUrl(it);
+      var sub = [];
+      if (it.cas) sub.push("CAS <b>" + highlight(it.cas, tokens) + "</b>");
+      if (it.supplier) sub.push(highlight(it.supplier, tokens));
+      var chips = (!loc && it.locs.length) ? '<div class="chips">' + it.locs.map(function (l) { return '<span class="chip">' + esc(l) + '</span>'; }).join("") + '</div>' : "";
+      var inner =
+        '<div class="body"><div class="name">' + highlight(it.name, tokens) + '</div>' +
+        (sub.length ? '<div class="sub">' + sub.join(" · ") + '</div>' : "") + chips + '</div>' +
+        (url ? '<span class="open">MSDS<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>'
+             : '<span class="nofile">파일 준비 중</span>');
+      return '<li>' + (url
+        ? '<a class="item" href="' + esc(url) + '" target="_blank" rel="noopener">' + inner + '</a>'
+        : '<div class="item">' + inner + '</div>') + '</li>';
+    }).join("");
+    $("list").innerHTML = html;
+  }
+
+  $("q").addEventListener("input", render);
+  $("clear").addEventListener("click", function () { $("q").value = ""; render(); $("q").focus(); });
+  $("allBtn").addEventListener("click", function () { setLoc(""); });
+
+  MSDS.loadList().then(function (items) {
+    items.forEach(function (it) {
+      it._hay = norm([it.code, it.name, it.cas, it.supplier, it.alias, it.locs.join(" ")].join(" "));
+      it._cho = norm(chosung(it.name + " " + it.alias));
+    });
+    items.sort(function (a, b) { return a.name.localeCompare(b.name, "ko"); });
+    all = items;
+    render();
+  }).catch(function (e) {
+    $("meta").textContent = "";
+    $("list").innerHTML = '<li class="state error"><strong>목록을 불러오지 못했습니다</strong>' + esc(e.message) + '</li>';
+  });
+})();
+</script>
+</body>
+</html>

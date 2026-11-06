@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>장소별 QR 출력</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --bg: #ecebe6; --surface: #ffffff; --ink: #17181a; --muted: #63666b; --line: #d6d3ca;
+    --accent: #e8590c; --accent-ink: #fff; --warn: #b42318;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121314; --surface: #1c1d1f; --ink: #f1f0ec; --muted: #a2a4a8; --line: #2e3033; --accent: #ff7a33; --accent-ink: #1a0d05; --warn: #ff8a80; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; font-size: 15px; }
+
+  .panel { max-width: 980px; margin: 0 auto; padding: 24px 16px 8px; }
+  h1 { margin: 0 0 4px; font-size: 22px; font-weight: 800; }
+  .lead { margin: 0 0 18px; color: var(--muted); }
+  .box { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+  .box h2 { margin: 0 0 10px; font-size: 15px; font-weight: 800; }
+  .box h2 span { color: var(--accent); margin-right: 6px; }
+  label.lbl { display: block; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  input[type=url] { width: 100%; font: inherit; color: var(--ink); background: transparent; border: 1.5px solid var(--line); border-radius: 10px; padding: 11px 12px; }
+  input[type=url]:focus { outline: none; border-color: var(--accent); }
+  .hint { font-size: 13px; color: var(--muted); margin-top: 8px; }
+  .hint.err { color: var(--warn); }
+  .locs { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px; }
+  .locs label { display: flex; gap: 8px; align-items: center; padding: 8px 10px; border: 1px solid var(--line); border-radius: 9px; cursor: pointer; }
+  .locs label em { margin-left: auto; font-style: normal; font-size: 12px; color: var(--muted); }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .seg { display: inline-flex; border: 1.5px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .seg button { font: inherit; border: 0; background: transparent; color: var(--ink); padding: 9px 14px; cursor: pointer; }
+  .seg button.on { background: var(--ink); color: var(--bg); font-weight: 700; }
+  .btn { font: inherit; font-weight: 700; border: 1.5px solid var(--line); background: transparent; color: var(--ink); padding: 9px 14px; border-radius: 10px; cursor: pointer; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .spacer { flex: 1; }
+
+  .preview { overflow-x: auto; padding: 8px 16px 40px; }
+  .sheets { width: max-content; margin: 0 auto; }
+
+  /* ---------- 인쇄 용지 (항상 흰 바탕) ---------- */
+  .sheet {
+    width: 210mm; height: 297mm; padding: 10mm; background: #fff; color: #111;
+    margin: 0 auto 16px; box-shadow: 0 2px 14px rgba(0,0,0,.15);
+    display: grid; gap: 4mm;
+  }
+  .sheet.l1 { grid-template: 1fr / 1fr; }
+  .sheet.l2 { grid-template: 1fr 1fr / 1fr; }
+  .sheet.l4 { grid-template: 1fr 1fr / 1fr 1fr; }
+  .card {
+    border: 0.4mm dashed #b8b8b8; border-radius: 3mm; padding: var(--pad);
+    display: flex; flex-direction: column; align-items: center; text-align: center; overflow: hidden;
+  }
+  .l1 .card { --pad: 16mm 14mm; --hd: 7mm; --loc: 22mm; --qr: 120mm; --txt: 5.6mm; --sm: 4mm; }
+  .l2 .card { --pad: 7mm 10mm; --hd: 4.6mm; --loc: 11mm; --qr: 66mm; --txt: 3.8mm; --sm: 2.9mm; }
+  .l4 .card { --pad: 7mm 6mm; --hd: 3.5mm; --loc: 7.4mm; --qr: 56mm; --txt: 3.1mm; --sm: 2.4mm; }
+  .card .hd {
+    width: 100%; display: flex; align-items: center; justify-content: center; gap: .6em;
+    font-size: var(--hd); font-weight: 800; letter-spacing: -.01em;
+    padding-bottom: .55em; border-bottom: 0.6mm solid #111;
+  }
+  .card .dia { width: .8em; height: .8em; transform: rotate(45deg); border: .16em solid #c8102e; border-radius: .08em; }
+  .card .lab { margin-top: auto; font-size: var(--sm); font-weight: 700; color: #666; letter-spacing: .08em; }
+  .card .loc { font-size: var(--loc); font-weight: 900; line-height: 1.15; letter-spacing: -.03em; word-break: keep-all; margin: .1em 0 .25em; }
+  .card .qr { width: var(--qr); height: var(--qr); }
+  .card .qr svg { width: 100%; height: 100%; display: block; }
+  .card .how { margin-top: .9em; font-size: var(--txt); font-weight: 600; line-height: 1.45; word-break: keep-all; }
+  .card .how b { color: #c2410c; }
+  .card .ft { margin-top: auto; padding-top: .8em; font-size: var(--sm); color: #555; line-height: 1.5; }
+  .card .ft .u { color: #888; word-break: break-all; }
+
+  @page { size: A4; margin: 0; }
+  @media print {
+    body { background: #fff; }
+    .panel { display: none; }
+    .preview { padding: 0; overflow: visible; }
+    .sheets { width: auto; }
+    .sheet { margin: 0; box-shadow: none; break-after: page; }
+    .sheet:last-child { break-after: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="panel">
+  <h1>장소별 QR 출력</h1>
+  <p class="lead">물질 목록의 ‘보관장소’를 읽어 장소마다 QR을 만듭니다. 찍으면 그 장소의 물질만 보이는 검색 화면이 열립니다.</p>
+
+  <div class="box">
+    <h2><span>1</span>사이트 주소</h2>
+    <label class="lbl" for="base">사이트를 올린 뒤 받은 주소 (예: https://회사아이디.github.io/msds/)</label>
+    <input id="base" type="url" placeholder="https://" spellcheck="false">
+    <div class="hint" id="baseHint"></div>
+  </div>
+
+  <div class="box">
+    <h2><span>2</span>출력할 장소</h2>
+    <div class="row" style="margin-bottom:10px">
+      <button class="btn" type="button" id="selAll">모두 선택</button>
+      <button class="btn" type="button" id="selNone">모두 해제</button>
+      <label style="display:flex;gap:8px;align-items:center;margin-left:6px"><input type="checkbox" id="incAll"> ‘전체 물질’ QR도 함께</label>
+    </div>
+    <div class="locs" id="locs"></div>
+    <div class="hint" id="listHint">불러오는 중…</div>
+    <div id="fileFallback" style="display:none;margin-top:10px">
+      <label class="lbl">목록 파일을 직접 선택해도 됩니다</label>
+      <input type="file" id="csvFile" accept=".csv,text/csv">
+    </div>
+  </div>
+
+  <div class="box">
+    <h2><span>3</span>인쇄</h2>
+    <div class="row">
+      <span>A4 한 장에</span>
+      <div class="seg" id="layout">
+        <button type="button" data-n="1">1개</button>
+        <button type="button" data-n="2">2개</button>
+        <button type="button" data-n="4" class="on">4개</button>
+      </div>
+      <span class="spacer"></span>
+      <button class="btn primary" type="button" id="printBtn">인쇄 / PDF 저장</button>
+    </div>
+    <div class="hint">인쇄 창에서 ‘배율 100%’, ‘여백 없음’(또는 기본값), ‘배경 그래픽’을 켜 주세요. 출력 후 휴대폰으로 꼭 한 번 찍어 보세요.</div>
+  </div>
+</div>
+
+<div class="preview"><div class="sheets" id="sheets"></div></div>
+
+<script src="config.js"></script>
+<script src="common.js"></script>
+<script src="qrcode.js"></script>
+<script>
+(function () {
+  var CFG = MSDS.config, esc = MSDS.esc;
+  var $ = function (id) { return document.getElementById(id); };
+  var items = [], counts = {}, layoutN = 4;
+
+  // 사이트에 올린 상태라면 주소를 자동으로 채움
+  var saved = ""; try { saved = localStorage.getItem("msds_base") || ""; } catch (e) {}
+  if (/^https?:/.test(location.protocol)) {
+    $("base").value = location.href.replace(/[?#].*$/, "").replace(/[^/]*$/, "");
+  } else if (saved) $("base").value = saved;
+
+  function baseUrl() {
+    var v = $("base").value.trim();
+    if (!v) return "";
+    if (!/^https?:\/\//i.test(v)) v = "https://" + v;
+    v = v.replace(/index\.html$/i, "").replace(/qr\.html$/i, "");
+    if (!/\/$/.test(v)) v += "/";
+    return v;
+  }
+  function urlFor(loc) { return baseUrl() + (loc ? "?loc=" + encodeURIComponent(loc) : ""); }
+
+  function qrSvg(text) {
+    var q = qrcode(0, "M"); q.addData(text); q.make();
+    return q.createSvgTag({ cellSize: 4, margin: 8, scalable: true });
+  }
+
+  function setList(list) {
+    items = list; counts = {};
+    list.forEach(function (it) { it.locs.forEach(function (l) { counts[l] = (counts[l] || 0) + 1; }); });
+    var names = Object.keys(counts).sort(function (a, b) { return a.localeCompare(b, "ko"); });
+    var noLoc = list.filter(function (it) { return !it.locs.length; }).length;
+    $("locs").innerHTML = names.map(function (n) {
+      return '<label><input type="checkbox" class="lc" value="' + esc(n) + '" checked> ' + esc(n) + '<em>' + counts[n] + '종</em></label>';
+    }).join("");
+    $("listHint").className = "hint";
+    $("listHint").textContent = "물질 " + list.length + "종 · 장소 " + names.length + "곳" +
+      (noLoc ? " · 보관장소가 비어 있는 물질 " + noLoc + "종(‘전체 물질’ QR로만 검색됨)" : "");
+    if (!names.length) $("incAll").checked = true;
+    render();
+  }
+
+  function render() {
+    var base = baseUrl();
+    $("baseHint").className = "hint" + (base ? "" : " err");
+    $("baseHint").textContent = base ? "QR 예시: " + urlFor("창고") : "주소를 입력해야 QR이 만들어집니다.";
+    try { if (base) localStorage.setItem("msds_base", $("base").value.trim()); } catch (e) {}
+
+    var sel = Array.prototype.map.call(document.querySelectorAll(".lc:checked"), function (c) { return c.value; });
+    var cards = [];
+    if ($("incAll").checked) cards.push({ loc: "", label: "전체 물질", n: items.length });
+    sel.forEach(function (l) { cards.push({ loc: l, label: l, n: counts[l] }); });
+
+    if (!base || !cards.length) { $("sheets").innerHTML = ""; return; }
+
+    var html = "";
+    for (var i = 0; i < cards.length; i += layoutN) {
+      html += '<section class="sheet l' + layoutN + '">';
+      cards.slice(i, i + layoutN).forEach(function (c) {
+        var u = urlFor(c.loc);
+        html += '<div class="card">' +
+          '<div class="hd"><span class="dia"></span>' + esc(CFG.siteTitle || "MSDS 물질안전보건자료") + '</div>' +
+          '<div class="lab">' + (c.loc ? "장소" : "검색 범위") + '</div>' +
+          '<div class="loc">' + esc(c.label) + '</div>' +
+          '<div class="qr">' + qrSvg(u) + '</div>' +
+          '<div class="how">휴대폰 카메라로 QR을 찍으면<br>' + (c.loc ? "이 장소에서 취급하는 물질의 " : "모든 물질의 ") + '<b>MSDS</b>를 볼 수 있습니다</div>' +
+          '<div class="ft">등록 물질 ' + c.n + '종' + (CFG.company ? " · " + esc(CFG.company) : "") +
+          (CFG.contact ? '<br>문의: ' + esc(CFG.contact) : "") + '<br><span class="u">' + esc(decodeURI(u)) + '</span></div>' +
+          '</div>';
+      });
+      html += '</section>';
+    }
+    $("sheets").innerHTML = html;
+  }
+
+  $("base").addEventListener("input", render);
+  $("incAll").addEventListener("change", render);
+  $("locs").addEventListener("change", render);
+  $("selAll").addEventListener("click", function () { document.querySelectorAll(".lc").forEach(function (c) { c.checked = true; }); render(); });
+  $("selNone").addEventListener("click", function () { document.querySelectorAll(".lc").forEach(function (c) { c.checked = false; }); render(); });
+  $("layout").addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    layoutN = +b.dataset.n;
+    this.querySelectorAll("button").forEach(function (x) { x.classList.toggle("on", x === b); });
+    render();
+  });
+  $("printBtn").addEventListener("click", function () {
+    if (!baseUrl()) { $("base").focus(); return; }
+    window.print();
+  });
+  $("csvFile").addEventListener("change", function () {
+    var f = this.files[0]; if (!f) return;
+    f.arrayBuffer().then(function (buf) {
+      try { setList(MSDS.loadFromBuffer(buf)); } catch (e) { $("listHint").className = "hint err"; $("listHint").textContent = e.message; }
+    });
+  });
+
+  MSDS.loadList().then(setList).catch(function (e) {
+    $("listHint").className = "hint err";
+    $("listHint").textContent = e.message;
+    $("fileFallback").style.display = "block";
+    render();
+  });
+})();
+</script>
+</body>
+</html>
