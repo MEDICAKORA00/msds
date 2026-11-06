@@ -1,22 +1,399 @@
-﻿코드,물질명,CAS번호,공급사,보관장소,파일명,별칭
-A-05,아세톤,67-64-1,대정화금,시약실,[A-05] Acetone(67-64-1)_1,acetone
-A-03,빙초산,64-19-7,대정화금,시약실,[A-03] Acetic acid glacial(2) (1),"아세트산, 초산, Acetic acid"
-A-04,무수아세트산,108-24-7,대정화금,시약실,[A-04] Acetic anhydride(108-24-7)_R10 (2),"아세트산 무수물, 무수초산, Acetic anhydride"
-A-08,P-아니스알데하이드,123-11-5,대정화금,시약실,[A-08] p-Anisaldehyde(123-11-5)_R2,"4-메톡시벤즈알데하이드, p-Anisaldehyde"
-A-23,품산암모늄,540-69-2,대정화금,시약실,[A-23] Ammonium formate(540-69-2)_1,"포름산암모늄, Ammonium formate"
-A-24,황산철(III)암모늄 심이수화물,7783-83-7,대정화금,시약실,[A-24] Ammonium iron(III) sulfate dodecahydrate(7783-83-7)_R7,"철명반, Ammonium iron(III) sulfate"
-A-28,인산수소이암모늄,7783-28-0,대정화금,시약실,[A-28] Ammonium phosphate dibasic(7783-28-0)_R9,"제2인산암모늄, Ammonium phosphate dibasic"
-A-29,인산이수소암모늄,7722-76-1,대정화금,시약실,[A-29] Ammonium phosphate monobasic(7722-76-1)_1,"제1인산암모늄, Ammonium phosphate monobasic"
-A-30,질산암모늄,6484-52-2,대정화금,시약실,[A-30] Ammonium nitrate(6484-52-2)_2 (CP GRADE),"	Ammonium nitrate"
-A-31,설팜산암모늄,7773-06-0,대정화금,시약실,[A-31] Ammonium sulfamate(7773-06-0) _1 (1),"술팜산암모늄, Ammonium sulfamate"
-A-49,L-(+)-아스코르브산,50-81-7,대정화금,시약실,[A-49] L-(+)-Ascorbic acid(50-81-7)_R8 (2),"비타민C, Ascorbic acid"
-A-85,알리자린 콤플렉손,455303-00-1,대정화금,시약실,[A-85] Alizarin Complexone(455303-00-1)_1,"	Alizarin complexone"
-A-86,황산철(III)암모늄 십이수화물,7783-83-7,대정화금,시약실,[A-86] Ammonium iron(III) sulfate dodecahydrate(7783-83-7)_R7 (1),"철명반, Ammonium iron(III) sulfate"
-B-01,완충용액 pH 4.01,-,대정화금,시약실,[B-01] Buffer solution pH 4.01_R7 (1),"	Buffer solution"
-B-02,완충용액 pH 7.00,-,대정화금,시약실,[B-02] Buffer solution pH 7.00_R11,"	Buffer solution"
-B-10,염화바륨 이수화물,10326-27-9,대정화금,시약실,[B-10] Barium chloride dihydrate(10326-27-9)_R10,"	Barium chloride"
-B-18,질산비스무트(III) 오수화물,10035-06-0,대정화금,시약실,[B-18] Bismuth(III) nitrate pentahydrate(0),Bismuth nitrate
-B-19,붕산,10043-35-3,대정화금,시약실,[B-19] Boric acid(10043-35-3)_R13,Boric acid
-B-36,N-브로모숙신이미드,128-08-5,대정화금,시약실,[B-36] N-Bromosuccinimide(0),"	NBS, N-Bromosuccinimide"
-B-47,완충용액 pH 10.01,-,대정화금,시약실,[B-47] Buffer solution pH 10.01_R6 (1),"	Buffer solution"
-C-01,Chloroform,67-66-3,대정화금,시약실,[C-02] Chloroform(67-66-3)_R13 (1),클로로포름
+﻿코드,물질명,CAS번호,공급사,보관장소,파일명,별칭,원본파일명
+A-03,빙초산,64-19-7,대정화금,시약실,A-03_daejung.pdf,Acetic acid glacial 아세트산 초산,대정화금/[A-03] Acetic acid glacial(2) (1).pdf
+A-04,무수아세트산,108-24-7,대정화금,시약실,A-04_daejung.pdf,Acetic anhydride 무수초산,대정화금/[A-04] Acetic anhydride(108-24-7)_R10 (2).pdf
+A-04,무수아세트산,108-24-7,삼전순약,시약실,A-04_samchun.pdf,Acetic anhydride 무수초산,삼전순약/[A-04] Acetic anhydride.pdf
+A-05,아세톤,67-64-1,대정화금,시약실,A-05_daejung.pdf,Acetone,대정화금/[A-05] Acetone(67-64-1)_1.pdf
+A-05,아세톤,67-64-1,삼전순약,시약실,A-05_samchun.pdf,Acetone,삼전순약/[A-05] Acetone.pdf
+A-08,p-아니스알데하이드,123-11-5,대정화금,시약실,A-08_daejung.pdf,p-Anisaldehyde,대정화금/[A-08] p-Anisaldehyde(123-11-5)_R2.pdf
+A-12,아세트아닐라이드,103-84-4,Thermo Fisher,시약실,A-12_thermo.pdf,Acetanilide,Thermo/[A-12] Acetanilide.pdf
+A-18,아세트산암모늄,631-61-8,삼전순약,시약실,A-18_samchun.pdf,Ammonium acetate 초산암모늄,삼전순약/[A-18] Ammonium acetate.pdf
+A-20,탄산암모늄,506-87-6,삼전순약,시약실,A-20_samchun.pdf,Ammonium carbonate,삼전순약/[A-20] Ammonium carbonate.pdf
+A-21,염화암모늄,12125-02-9,삼전순약,시약실,A-21_samchun.pdf,Ammonium chloride,삼전순약/[A-21] Ammonium Chloride.pdf
+A-22,시트르산이암모늄,3012-65-5,삼전순약,시약실,A-22_samchun.pdf,Ammonium citrate dibasic 구연산암모늄,"삼전순약/[A-22] Ammonium citrate, dibasic.pdf"
+A-23,폼산암모늄,540-69-2,대정화금,시약실,A-23_daejung.pdf,Ammonium formate 포름산암모늄,대정화금/[A-23] Ammonium formate(540-69-2)_1.pdf
+A-24,황산철(III)암모늄 십이수화물,7783-83-7,대정화금,시약실,A-24_daejung.pdf,Ammonium iron(III) sulfate dodecahydrate 철명반,대정화금/[A-24] Ammonium iron(III) sulfate dodecahydrate(7783-83-7)_R7.pdf
+A-26,몰리브덴산암모늄 사수화물,12054-85-2,삼전순약,시약실,A-26_samchun.pdf,Ammonium molybdate tetrahydrate,"삼전순약/[A-26] Ammonium molybdate, tetrahydrate.pdf"
+A-27,옥살산암모늄 일수화물,6009-70-7,삼전순약,시약실,A-27_samchun.pdf,Ammonium oxalate monohydrate 수산암모늄,"삼전순약/[A-27] Ammonium oxalate, monohydrate.pdf"
+A-28,인산수소이암모늄,7783-28-0,대정화금,시약실,A-28_daejung.pdf,Ammonium phosphate dibasic 제2인산암모늄,대정화금/[A-28] Ammonium phosphate dibasic(7783-28-0)_R9.pdf
+A-29,인산이수소암모늄,7722-76-1,대정화금,시약실,A-29_daejung.pdf,Ammonium phosphate monobasic 제1인산암모늄,대정화금/[A-29] Ammonium phosphate monobasic(7722-76-1)_1.pdf
+A-30,질산암모늄,6484-52-2,대정화금,시약실,A-30_daejung.pdf,Ammonium nitrate,대정화금/[A-30] Ammonium nitrate(6484-52-2)_2 (CP GRADE).pdf
+A-31,설팜산암모늄,7773-06-0,대정화금,시약실,A-31_daejung.pdf,Ammonium sulfamate 술팜산암모늄,대정화금/[A-31] Ammonium sulfamate(7773-06-0) _1 (1).pdf
+A-32,황산암모늄,7783-20-2,Acros Organics,시약실,A-32_acros.pdf,Ammonium sulfate,ACROS ORGANICS/[A-32] Ammonium_sulfate_MTR_KOSD_KO.pdf
+A-34,티오시안산암모늄,1762-95-4,삼전순약,시약실,A-34_samchun.pdf,Ammonium thiocyanate,삼전순약/[A-34] Ammonium thiocyanate.pdf
+A-37,삼산화비소,1327-53-3,Alfa Aesar,시약실,A-37_alfa.pdf,Arsenic(III) oxide 산화비소,ALFA AESAR/[A-37] Arsenic(III_MTR_KOSD_KO 99.5% (metals basis).pdf
+A-38,아디프산,124-04-9,Thermo Fisher,시약실,A-38_thermo.pdf,Adipic acid,Thermo/[A-38] Adipic acid.pdf
+A-40,4-아미노안티피린,83-07-8,Sigma-Aldrich,시약실,A-40_sigma.pdf,4-Aminoantipyrine,sigma-aldrich/[A-40] 4-Amionantipyrin (≥99%).pdf
+A-46,안트론,90-44-8,Sigma-Aldrich,시약실,A-46_sigma.pdf,Anthrone,"sigma-aldrich/[A-46] Anthrone (ACS reagent, 97%).pdf"
+A-49,L-(+)-아스코르브산,50-81-7,대정화금,시약실,A-49_daejung.pdf,L-Ascorbic acid 비타민C,대정화금/[A-49] L-(+)-Ascorbic acid(50-81-7)_R8 (2).pdf
+A-66,2-아미노-5-클로로벤조페논,719-59-5,Sigma-Aldrich,시약실,A-66_sigma.pdf,2-Amino-5-chlorobenzophenone,sigma-aldrich/[A-66] 2-Amino-5-chlorobenzophenone.pdf
+A-68,황화암모늄 용액,12135-76-1,Kanto Chemical,시약실,A-68_kanto.pdf,Ammonium sulfide solution,kanto chemical/[A-68] Ammonium sulfide solution.pdf
+A-69,염화안티몬(V),7647-18-9,Sigma-Aldrich,시약실,A-69_sigma.pdf,Antimony(V) chloride,sigma-aldrich/[A-69] Antimony(V) chloride ≥99.99% trace metals basis.pdf
+A-72,알리자린 레드 S,130-22-3,삼전순약,시약실,A-72_samchun.pdf,Alizarin red S,삼전순약/[A-72] Alizarin red S.pdf
+A-76,알루미논,569-58-4,Alfa Aesar,시약실,A-76_alfa.pdf,Aluminon,ALFA AESAR/[A-76] Aluminon_MTR_KOSD_KO.pdf
+A-77,과황산암모늄,7727-54-0,Sigma-Aldrich,시약실,A-77_sigma.pdf,Ammonium persulfate,sigma-aldrich/[A-77] Ammonium persulfate.pdf
+A-78,변성 에탄올(무수),64-17-5,Fisher Scientific,시약실,A-78_fisher.pdf,Ethanol denatured 에틸알코올,Fisher scientific korea/[A-78] ethnol-alchol-rgt-anhy-dena-l.pdf
+A-79,황산알루미늄칼륨 십이수화물,7784-24-9,삼전순약,시약실,A-79_samchun.pdf,Aluminum potassium sulfate dodecahydrate 명반 백반,"삼전순약/[A-79] Aluminum potassium sulfate dodecahydrate, 99.2%.pdf"
+A-82,인산수소암모늄나트륨 사수화물,7783-13-3,Sigma-Aldrich,시약실,A-82_sigma.pdf,Ammonium sodium phosphate dibasic tetrahydrate,sigma-aldrich/[A-82] Ammoniom sodium phosphate dibasic tetrahydrate.pdf
+A-85,알리자린 콤플렉손,455303-00-1,대정화금,시약실,A-85_daejung.pdf,Alizarin complexone,대정화금/[A-85] Alizarin Complexone(455303-00-1)_1.pdf
+A-86,황산철(III)암모늄 십이수화물,7783-83-7,대정화금,시약실,A-86_daejung.pdf,Ammonium iron(III) sulfate dodecahydrate 철명반,대정화금/[A-86] Ammonium iron(III) sulfate dodecahydrate(7783-83-7)_R7 (1).pdf
+B-01,완충용액 pH 4.01,혼합물,대정화금,시약실,B-01_daejung.pdf,Buffer solution pH 4.01,대정화금/[B-01] Buffer solution pH 4.01_R7 (1).pdf
+B-02,완충용액 pH 7.00,혼합물,대정화금,시약실,B-02_daejung.pdf,Buffer solution pH 7.00,대정화금/[B-02] Buffer solution pH 7.00_R11.pdf
+B-03,1-부탄올,71-36-3,삼전순약,시약실,B-03_samchun.pdf,1-Butanol n-Butanol 부틸알코올,삼전순약/[B-03] 1-Butanol .pdf
+B-04,벤질 알코올,100-51-6,Fujifilm Wako,시약실,B-04_wako.pdf,Benzyl alcohol,Wako/[B-04] Benzyl alcohol.pdf
+B-10,염화바륨 이수화물,10326-27-9,대정화금,시약실,B-10_daejung.pdf,Barium chloride dihydrate,대정화금/[B-10] Barium chloride dihydrate(10326-27-9)_R10.pdf
+B-16,비페닐,92-52-4,Kanto Chemical,시약실,B-16_kanto.pdf,Biphenyl,kanto chemical/[B-16] Biphenyl.pdf
+B-18,질산비스무트(III) 오수화물,10035-06-0,대정화금,시약실,B-18_daejung.pdf,Bismuth(III) nitrate pentahydrate,대정화금/[B-18] Bismuth(III) nitrate pentahydrate(0).pdf
+B-19,붕산,10043-35-3,대정화금,시약실,B-19_daejung.pdf,Boric acid,대정화금/[B-19] Boric acid(10043-35-3)_R13.pdf
+B-21,4-하이드록시벤조산 부틸,94-26-8,삼전순약,시약실,B-21_samchun.pdf,Butyl p-hydroxybenzoate Butylparaben 부틸파라벤,삼전순약/[B-21] Butyl p-hydroxy-benzoate.pdf
+B-32,브로모크레졸 그린,76-60-8,Sigma-Aldrich,시약실,B-32_sigma.pdf,Bromocresol green,sigma-aldrich/[B-32] Bromocresol green.pdf
+B-35,브로모페놀 블루,115-39-9,삼전순약,시약실,B-35_samchun.pdf,Bromophenol blue,삼전순약/[B-35] Bromophenol blue.pdf
+B-36,N-브로모숙신이미드,128-08-5,대정화금,시약실,B-36_daejung.pdf,N-Bromosuccinimide NBS,대정화금/[B-36] N-Bromosuccinimide(0).pdf
+B-37,브로모티몰 블루,76-59-5,삼전순약,시약실,B-37_samchun.pdf,Bromothymol blue BTB,삼전순약/[B-37] Bromothymol blue.pdf
+B-39,차질산비스무트,1304-85-4,Sigma-Aldrich,시약실,B-39_sigma.pdf,Bismuth subnitrate,sigma-aldrich/[B-39] Bismuth subnitrate.pdf
+B-47,완충용액 pH 10.01,혼합물,대정화금,시약실,B-47_daejung.pdf,Buffer solution pH 10.01,대정화금/[B-47] Buffer solution pH 10.01_R6 (1).pdf
+B-48,말레산 비스(2-에틸헥실),142-16-5,Sigma-Aldrich,시약실,B-48_sigma.pdf,Bis(2-ethylhexyl) maleate,sigma-aldrich/[B-48] Bis(2-ethylhexyl) maleate.pdf
+C-01,클로로포름,67-66-3,J.T.Baker,시약실,C-01_jtbaker.pdf,Chloroform,J.T.Baker/[C-01] Chloroform.pdf
+C-02,클로로포름,67-66-3,대정화금,시약실,C-02_daejung.pdf,Chloroform,대정화금/[C-02] Chloroform(67-66-3)_R13 (1).pdf
+C-02,클로로포름,67-66-3,삼전순약,시약실,C-02_samchun.pdf,Chloroform,삼전순약/[C-02] chloroform.pdf
+C-03,사이클로헥산,110-82-7,삼전순약,시약실,C-03_samchun.pdf,Cyclohexane 시클로헥산,삼전순약/[C-03] Cyclohexane .pdf
+C-06,시아노아세트산,372-09-8,Acros Organics,시약실,C-06_acros.pdf,Cyanoacetic acid,ACROS ORGANICS/[C-06] Cyanoacetic_acid_MTR_KOSD_KO.pdf
+C-06,시아노아세트산,372-09-8,Alfa Aesar,시약실,C-06_alfa.pdf,Cyanoacetic acid,ALFA AESAR/[C-06] Cyanoacetic_acid_MTR_KOSD_KO.pdf
+C-08,1-클로로부탄,109-69-3,Acros Organics,시약실,C-08_acros.pdf,1-Chlorobutane,"ACROS ORGANICS/[C-08] 1-Chlorobutane_MTR_KOSD_KO (99.5%, Acroseal).pdf"
+C-09,아세트산칼슘 일수화물,5743-26-0,대정화금,시약실,C-09_daejung.pdf,Calcium acetate monohydrate 초산칼슘,대정화금/[C-09] Calcium acetate monohydrate(5743-26-0)(1) (2).pdf
+C-10,탄산칼슘,471-34-1,삼전순약,시약실,C-10_samchun.pdf,Calcium carbonate,삼전순약/[C-10] Calcium carbonate.pdf
+C-11,염화칼슘(무수),10043-52-4,대정화금,시약실,C-11_daejung.pdf,Calcium chloride anhydrous,대정화금/[C-11] Calcium chloride anhydrous(10043-52-4)_R10.pdf
+C-12,염화칼슘 이수화물,10035-04-8,대정화금,시약실,C-12_daejung.pdf,Calcium chloride dihydrate,대정화금/[C-12] Calcium chloride dihydrate(10035-04-8)_R10.pdf
+C-13,수산화칼슘,1305-62-0,대정화금,시약실,C-13_daejung.pdf,Calcium hydroxide,대정화금/[C-13] Calcium hydroxide(1305-62-0)_R9.pdf
+C-17,셀라이트 545,68855-54-9,Thermo Fisher,시약실,C-17_thermo.pdf,Celite 545 규조토,Thermo/[C-17] Celite 545.pdf
+C-21,클로로아세트산,79-11-8,삼전순약,시약실,C-21_samchun.pdf,Chloroacetic acid,삼전순약/[C-21] Chloroacetic acid.pdf
+C-23,trans-신남산,140-10-3,Fujifilm Wako,시약실,C-23_wako.pdf,trans-Cinnamic acid 계피산,Wako/[C-23] trans-Cinnamic acid.pdf
+C-24,시트르산(무수),77-92-9,대정화금,시약실,C-24_daejung.pdf,Citric acid anhydrous 구연산,대정화금/[C-24] Citric acid anhydrous(77-92-9)_R9_1.pdf
+C-25,시트르산 일수화물,5949-29-1,대정화금,시약실,C-25_daejung.pdf,Citric acid monohydrate 구연산,대정화금/[C-25] Citric acid monohydrate(5949-29-1)(0).pdf
+C-26,염화세슘,7647-17-8,대정화금,시약실,C-26_daejung.pdf,Cesium chloride,대정화금/[C-26] Cesium chloride(7647-17-8)_R7.pdf
+C-28,질산코발트(II) 육수화물,10026-22-9,삼전순약,시약실,C-28_samchun.pdf,Cobalt(II) nitrate hexahydrate,"삼전순약/[C-28] Cobalt(Ⅱ) nitrate, hexahydrate.pdf"
+C-30,황산구리(II) 오수화물,7758-99-8,Sigma-Aldrich,시약실,C-30_sigma.pdf,Copper(II) sulfate pentahydrate,"sigma-aldrich/[C-30] Copper(Ⅱ) sulfate, pentahydrate.pdf"
+C-35,쿠페론,135-20-6,대정화금,시약실,C-35_daejung.pdf,Cupferron,대정화금/[C-35] Cupferron(1).pdf
+C-35,쿠페론,135-20-6,삼전순약,시약실,C-35_samchun.pdf,Cupferron,삼전순약/[C-35] Cupferron.pdf
+C-40,4-클로로벤조산,74-11-3,Acros Organics,시약실,C-40_acros.pdf,4-Chlorobenzoic acid,ACROS ORGANICS/[C-40] 4-Chlorobenzoic_acid_MTR_KOSD_KO.pdf
+C-42,클로로트리메틸실란,75-77-4,Fujifilm Wako,시약실,C-42_wako.pdf,Chlorotrimethylsilane TMCS,Wako/[C-42] Chlorotrimethylsilane.pdf
+C-43,크로모트로프산 이나트륨염 이수화물,5808-22-0,Sigma-Aldrich,시약실,C-43_sigma.pdf,Chromotropic acid disodium salt,"sigma-aldrich/[C-43] Chromotropic acid, disodium salt (puriss. p.a., ACS reagent, for the detection of Ag, ClO3-, Cr, Hg, NO2-, NO32-, Ti, ≥98.0%).pdf"
+C-51,4-클로로벤조페논,134-85-0,Acros Organics,시약실,C-51_acros.pdf,4-Chlorobenzophenone,ACROS ORGANICS/[C-51] 4-Chlorobenzophenone_MTR_KOSD_KO.pdf
+C-53,4-클로로벤즈하이드롤,119-56-2,Sigma-Aldrich,시약실,C-53_sigma.pdf,4-Chlorobenzhydrol,sigma-aldrich/[C-53] 4-Chlorobenzhydrol.pdf
+C-55,이황화탄소,75-15-0,Kanto Chemical,시약실,C-55_kanto.pdf,Carbon disulfide,kanto chemical/[C-55] Carbon disulfide.pdf
+C-59,염화백금산 육수화물,18497-13-7,Sigma-Aldrich,시약실,C-59_sigma.pdf,Chloroplatinic acid hexahydrate,sigma-aldrich/[C-59] Chloroplatinic acid hexahydrate (BioXtra).pdf
+C-64,1-클로로나프탈렌,90-13-1,Sigma-Aldrich,시약실,C-64_sigma.pdf,1-Chloronaphthalene,sigma-aldrich/[C-64] 1-Chloronaphthalene.pdf
+C-66,카페인,58-08-2,Sigma-Aldrich,시약실,C-66_sigma.pdf,Caffeine,sigma-aldrich/[C-66] Caffeine.pdf
+C-67,구리(II)-에틸렌디아민 착물 용액(1M),14552-35-3,Acros Organics,시약실,C-67_acros.pdf,Copper(II)-ethylenediamine complex solution,ACROS ORGANICS/[C-67] Copper(II_MTR_KOSD_KO.pdf
+C-68,황산세륨(IV),13590-82-4,Sigma-Aldrich,시약실,C-68_sigma.pdf,Cerium(IV) sulfate,sigma-aldrich/[C-68] Cerium(IV) sulfate.pdf
+C-69,시토신,71-30-7,대정화금,시약실,C-69_daejung.pdf,Cytosine,대정화금/[C-69] Cytosine(3).pdf
+C-71,수산화구리(II),20427-59-2,대정화금,시약실,C-71_daejung.pdf,Copper(II) hydroxide,대정화금/[C-71] Copper(II) hydroxide(2).pdf
+C-72,클로로포름-d,865-49-6,Sigma-Aldrich,시약실,C-72_sigma.pdf,Chloroform-d 중수소화클로로포름,sigma-aldrich/[C-72] Chloroform-d.pdf
+D-02,"N,N-디메틸포름아미드",68-12-2,Sigma-Aldrich,시약실,D-02_sigma.pdf,"N,N-Dimethylformamide DMF","sigma-aldrich/[D-02] N,N-Dimethylformamide(99.0%).pdf"
+D-02,"N,N-디메틸포름아미드",68-12-2,삼전순약,시약실,D-02_samchun.pdf,"N,N-Dimethylformamide DMF","삼전순약/[D-02] N,N-Dimethylformamide(99.0%).pdf"
+D-03,"N,N-디메틸아세트아마이드",127-19-5,대정화금,시약실,D-03_daejung.pdf,"N,N-Dimethylacetamide DMAc",대정화금/[D-03] N.N-Dimethylacetamide(127-19-5)_R11.pdf
+D-03,"N,N-디메틸아세트아마이드",127-19-5,삼전순약,시약실,D-03_samchun.pdf,"N,N-Dimethylacetamide DMAc","삼전순약/[D-03] N,N-Dimethylacetamide.pdf"
+D-05,디메틸 설폭사이드,67-68-5,대정화금,시약실,D-05_daejung.pdf,Dimethyl sulfoxide DMSO,대정화금/[D-05] Dimethyl sulfoxide(67-68-5)_R12 (2).pdf
+D-07,"1,2-디클로로에탄",107-06-2,삼전순약,시약실,D-07_samchun.pdf,"1,2-Dichloroethane","삼전순약/[D-07] 1,2-Dichloroethane .pdf"
+D-08,디에틸렌 글리콜,111-46-6,대정화금,시약실,D-08_daejung.pdf,Diethylene glycol,대정화금/[D-08] Diethylene glycol(2).pdf
+D-09,프탈산 디메틸,131-11-3,삼전순약,시약실,D-09_samchun.pdf,Dimethyl phthalate,삼전순약/[D-09] Dimethylphthalate.pdf
+D-10,"1,4-디옥산",123-91-1,Sigma-Aldrich,시약실,D-10_sigma.pdf,"1,4-Dioxane","sigma-aldrich/[D-10] 1,4-Dioxane .pdf"
+D-13,디페닐아민,122-39-4,대정화금,시약실,D-13_daejung.pdf,Diphenylamine,대정화금/[D-13] Diphenylamine(5).pdf
+D-16,디티존,60-10-6,대정화금,시약실,D-16_daejung.pdf,Dithizone,대정화금/[D-16] Dithizone(60-10-6).pdf
+D-18,1-데칸설폰산 나트륨,13419-61-9,Fujifilm Wako,시약실,D-18_wako.pdf,1-Decanesulfonic acid sodium salt,Fujifilm wako pure chemical corporation/[D-18] 1-Decanesulfonic acid sodium salt.pdf
+D-22,"3,4-디클로로아닐린",95-76-1,Sigma-Aldrich,시약실,D-22_sigma.pdf,"3,4-Dichloroaniline","sigma-aldrich/[D-22] 3,4-Dichloroaniline.pdf"
+D-24,"N,N-디에틸-N'-1-나프틸에틸렌디아민 옥살산염",29473-53-8,Kanto Chemical,시약실,D-24_kanto.pdf,"N,N-Diethyl-N'-1-naphthylethylenediamine oxalate","kanto chemical/[D-24] N,N-Diethyl-N'-1-naphthyl-ethylenediamine oxalate.pdf"
+D-31,디메틸글리옥심,95-45-4,대정화금,시약실,D-31_daejung.pdf,Dimethylglyoxime,대정화금/[D-31] Dimethylglyoxime(2).pdf
+D-34,"1-클로로-2,4-디니트로벤젠",97-00-7,대정화금,시약실,D-34_daejung.pdf,"1-Chloro-2,4-dinitrobenzene","대정화금/[D-34] 1-Chloro-2,4-dinitrobenzene (97-00-7)_R3.pdf"
+D-37,디페닐메탄올,91-01-0,Sigma-Aldrich,시약실,D-37_sigma.pdf,Diphenylmethanol Benzhydrol,sigma-aldrich/[D-37] Diphenylmethanol.pdf
+D-39,"2,2'-디피리딜",366-18-7,대정화금,시약실,D-39_daejung.pdf,"2,2'-Dipyridyl Bipyridine",대정화금/[D-39] 22-Dipyridyl(366-18-7).pdf
+D-42,4-디메틸아미노벤즈알데하이드,100-10-7,Acros Organics,시약실,D-42_acros.pdf,4-Dimethylaminobenzaldehyde,ACROS ORGANICS/[D-42] 4-Dimethylaminobenzaldehyde_MTR_KOSD_KO (99+%).pdf
+D-45,프탈산 디에틸,84-66-2,삼전순약,시약실,D-45_samchun.pdf,Diethyl phthalate,삼전순약/[D-45] Diethyl phthalate.pdf
+D-47,D-만니톨,69-65-8,Sigma-Aldrich,시약실,D-47_sigma.pdf,D-Mannitol,sigma-aldrich/[D-47] D-Mannitol.pdf
+D-49,"1,3-디메틸-2-이미다졸리디논",80-73-9,Fujifilm Wako,시약실,D-49_wako.pdf,"1,3-Dimethyl-2-imidazolidinone DMI","Wako/[D-49] 1,3-Dimethyl-2 imidazolidinone.pdf"
+D-50,"1,3-디니트로벤젠",99-65-0,Sigma-Aldrich,시약실,D-50_sigma.pdf,"1,3-Dinitrobenzene","sigma-aldrich/[D-50] 1,3-Dinitrobenzene.pdf"
+D-51,디부틸아민,111-92-2,Sigma-Aldrich,시약실,D-51_sigma.pdf,Dibutylamine,sigma-aldrich/[D-51] Dibutylamine.pdf
+D-52,"N,N-디메틸-p-페닐렌디아민 이염산염",536-46-9,Alfa Aesar,시약실,D-52_alfa.pdf,"N,N-Dimethyl-p-phenylenediamine dihydrochloride",ALFA AESAR/[D-52] N_N-Dimethyl-p-phenylenediamine_dihydrochloride_MTR_KOSD_KO.pdf
+E-01,변성 에틸 알코올 99.5%(무수),64-17-5,대정화금,시약실,E-01_daejung.pdf,Ethyl alcohol anhydrous denatured 에탄올,대정화금/[E-01] Ethyl alcohol anhydrous denatured 99.5%(64-17-5)_R5 (1).pdf
+E-03,아세트산 에틸,141-78-6,대정화금,시약실,E-03_daejung.pdf,Ethyl acetate 초산에틸,대정화금/[E-03] Ethyl acetate(141-78-6)_R13.pdf
+E-04,아세트산 에틸(HPLC),141-78-6,J.T.Baker,시약실,E-04_jtbaker.pdf,Ethyl acetate 초산에틸,J.T.Baker/[E-04] Ethyl acetate (HPLC).pdf
+E-05,에틸 에테르,60-29-7,대정화금,시약실,E-05_daejung.pdf,Ethyl ether Diethyl ether 에테르,대정화금/[E-05] Ethyl ether(60-29-7)_R11.pdf
+E-08,벤조산 에틸,93-89-0,Junsei,시약실,E-08_junsei.pdf,Ethyl benzoate,JUNSEI/[E-08] ETHYL BENZOATE.pdf
+E-09,EDTA 이나트륨 이수화물,6381-92-6,대정화금,시약실,E-09_daejung.pdf,EDTA-2Na dihydrate,대정화금/[E-09] EDTA-2Na dihydrate(6381-92-6)_R11.pdf
+E-18,에틸 알코올 70~75%,64-17-5,대정화금,시약실,E-18_daejung.pdf,Ethyl alcohol 에탄올,대정화금/[E-18] Ethyl alcohol.pdf
+E-19,EDTA 이나트륨 용액,6381-92-6,삼전순약,시약실,E-19_samchun.pdf,EDTA disodium salt solution,삼전순약/[E-19] EDTA disodium salt solution.pdf
+E-27,에틸렌디아민테트라아세트산,60-00-4,삼전순약,시약실,E-27_samchun.pdf,Ethylenediaminetetraacetic acid EDTA,삼전순약/[E-27] Ethylenediaminetetraacetic acid.pdf
+E-29,4-아미노벤조산 에틸,94-09-7,Sigma-Aldrich,시약실,E-29_sigma.pdf,Ethyl 4-aminobenzoate Benzocaine 벤조카인,sigma-aldrich/[E-29] Ethyl 4-aminobenzoate.pdf
+E-30,EDTA 이나트륨 용액(0.1 mol/L),6381-92-6,대정화금,시약실,E-30_daejung.pdf,EDTA disodium salt solution,대정화금/[E-30] 0.1mol;L EDTA disodium salt solution(N;10).pdf
+E-31,EDTA 이나트륨 용액(N/100),6381-92-6,삼전순약,시약실,E-31_samchun.pdf,EDTA disodium salt solution,"삼전순약/[E-31] EDTA disodium salt solution(N,100).pdf"
+F-01,폼산 85%,64-18-6,대정화금,시약실,F-01_daejung.pdf,Formic acid 개미산 포름산,대정화금/[F-01] Formic acid 85%_R5.pdf
+F-03,퓨르퓨랄,98-01-1,Acros Organics,시약실,F-03_acros.pdf,2-Furaldehyde Furfural,ACROS ORGANICS/[F-03] 2-Furaldehyde_MTR_KOSD_KO.pdf
+F-03,퓨르퓨랄,98-01-1,Sigma-Aldrich,시약실,F-03_sigma.pdf,Furfural,sigma-aldrich/[F-03] Furfural .pdf
+F-04,포름아미드,75-12-7,Kanto Chemical,시약실,F-04_kanto.pdf,Formamide,kanto chemical/[F-04] Formamide.pdf
+F-07,포름알데하이드 용액,50-00-0,대정화금,시약실,F-07_daejung.pdf,Formaldehyde 포르말린,대정화금/[F-07] Formaldehyde_R10 (1).pdf
+F-13,플루오레세인 나트륨,518-47-8,Sigma-Aldrich,시약실,F-13_sigma.pdf,Fluorescein sodium salt,sigma-aldrich/[F-13] Fluorescein sodium salt.pdf
+F-16,엽산,59-30-3,대정화금,시약실,F-16_daejung.pdf,Folic acid,대정화금/[F-16] Folic Acid.pdf
+G-01,구아이아콜,90-05-1,Acros Organics,시약실,G-01_acros.pdf,Guaiacol,ACROS ORGANICS/[G-01] Guaiacol_MTR_KOSD_KO.pdf
+G-02,글리세롤,56-81-5,삼전순약,시약실,G-02_samchun.pdf,Glycerol 글리세린,삼전순약/[G-02] Glycerol .pdf
+G-04,로커스트빈검,9000-40-2,Sigma-Aldrich,시약실,G-04_sigma.pdf,Locust bean gum,"sigma-aldrich/[G-04] GUM, Locust Bean.pdf"
+G-07,글리신,56-40-6,Sigma-Aldrich,시약실,G-07_sigma.pdf,Glycine,sigma-aldrich/[G-07] Glycine.pdf
+G-12,글리콜산,79-14-1,Sigma-Aldrich,시약실,G-12_sigma.pdf,Glycolic acid,sigma-aldrich/[G-12] Glycolic acid.pdf
+G-16,이소소르비드,652-67-5,Sigma-Aldrich,시약실,G-16_sigma.pdf,Dianhydro-D-glucitol Isosorbide,sigma-aldrich/[G-16] Dianhydro-D-glucitol.pdf
+H-01,염산 0.01N 표준용액,7647-01-0,대정화금,시약실,H-01_daejung.pdf,Hydrochloric acid,대정화금/[H-01] Hydrochloric acid.pdf
+H-04,하이드라날 컴포지트 5,혼합물,Honeywell Fluka,시약실,H-04_fluka.pdf,HYDRANAL-Composite 5 칼피셔,Honeywell fluka/[H-04] HYDRANAL-composite 5.pdf
+H-08,과산화수소,7722-84-1,Merck,시약실,H-08_merck.pdf,Hydrogen peroxide,Merck-chemicals/[H-08] Hydrogen peroxide.PDF
+H-08,과산화수소,7722-84-1,삼전순약,시약실,H-08_samchun.pdf,Hydrogen peroxide,삼전순약/[H-08] Hydrogen peroxide.pdf
+H-09,불화수소산,7664-39-3,Sigma-Aldrich,시약실,H-09_sigma.pdf,Hydrofluoric acid 불산,sigma-aldrich/[H-09] Hydrofluoric acid.pdf
+H-10,헥사메틸렌테트라민,100-97-0,대정화금,시약실,H-10_daejung.pdf,Hexamethylenetetramine,대정화금/[H-10] Hexamethylenetetramine(100-97-0)_R9.pdf
+H-12,염산하이드록실아민,5470-11-1,삼전순약,시약실,H-12_samchun.pdf,Hydroxylamine hydrochloride,삼전순약/[H-12] Hydroxylamine hydrochloride.pdf
+H-19,1-헵탄설폰산 나트륨,22767-50-6,삼전순약,시약실,H-19_samchun.pdf,1-Heptanesulfonic acid sodium salt,삼전순약/[H-19] 1-Heptanesulfonic acid sodium salt.pdf
+H-30,하이드라날 포름아미드 드라이,75-12-7,Sigma-Aldrich,시약실,H-30_sigma.pdf,HYDRANAL-Formamide dry 포름아미드,sigma-aldrich/[H-30] HYDRANAL-Formamide dry.pdf
+H-36,하이드록시프로필 셀룰로오스,9004-64-2,Sigma-Aldrich,시약실,H-36_sigma.pdf,Hydroxypropyl cellulose HPC,sigma-aldrich/[H-36] Hydroxypropyl cellulose.pdf
+I-01,"2,2,4-트리메틸펜탄",540-84-1,삼전순약,시약실,I-01_samchun.pdf,"2,2,4-Trimethylpentane Isooctane 이소옥탄","삼전순약/[I-01] 2,2,4-Trimethylpentane, 99.7%.pdf"
+I-07,요오드,7553-56-2,삼전순약,시약실,I-07_samchun.pdf,Iodine 아이오딘,삼전순약/[I-07] Iodine.pdf
+I-09,질산철(III) 구수화물,7782-61-8,대정화금,시약실,I-09_daejung.pdf,Iron(III) nitrate nonahydrate 질산제이철,대정화금/[I-09] Iron(III) nitrate nonahydrate(7782-61-8)_R7 (1).pdf
+I-15,2-요오드프로판,75-30-9,Acros Organics,시약실,I-15_acros.pdf,2-Iodopropane,ACROS ORGANICS/[I-15] 2-Iodopropane_MTR_KOSD_KO.pdf
+I-17,L-이소류신,73-32-5,Acros Organics,시약실,I-17_acros.pdf,L-Isoleucine,ACROS ORGANICS/[I-17] L-Isoleucine_MTR_KOSD_KO.pdf
+I-26,이온교환수지 앰버라이트 IR-120,39389-20-3,Sigma-Aldrich,시약실,I-26_sigma.pdf,Amberlite IR-120,sigma-aldrich/[I-26] Ion-exchange resin amberliteⓇ IR-120.pdf
+I-27,황산철(II) 칠수화물,7782-63-0,Sigma-Aldrich,시약실,I-27_sigma.pdf,Iron(II) sulfate heptahydrate 황산제일철,sigma-aldrich/[I-27] iron(ll) sulfate heptahydrate.pdf
+I-29,염화철(III),7705-08-0,Sigma-Aldrich,시약실,I-29_sigma.pdf,Iron(III) chloride 염화제이철,sigma-aldrich/[I-29] Iron(Ⅲ) chloride.pdf
+I-30,요오드화에틸,75-03-6,Sigma-Aldrich,시약실,I-30_sigma.pdf,Iodoethane Ethyl iodide,sigma-aldrich/[I-30] Iodoethane.pdf
+L-03,산화란타넘(III),1312-81-8,대정화금,시약실,L-03_daejung.pdf,Lanthanum(III) oxide 산화란탄,대정화금/[L-03] Lanthanum(III) oxide(1312-81-8)(0).pdf
+L-04,락토오스 일수화물,10039-26-6,대정화금,시약실,L-04_daejung.pdf,Lactose monohydrate 유당 젖당,대정화금/[L-04] Lactose monohydrate(10039-26-6)(0).pdf
+L-05,아세트산납(II) 삼수화물,6080-56-4,삼전순약,시약실,L-05_samchun.pdf,Lead acetate 초산납,삼전순약/[L-05] Lead acetate.pdf
+L-12,β-락토오스,5965-66-2,Sigma-Aldrich,시약실,L-12_sigma.pdf,beta-Lactose 유당,sigma-aldrich/[L-12] β-Lactose.pdf
+L-17,로커스트빈검,9000-40-2,Sigma-Aldrich,시약실,L-17_sigma.pdf,Locust bean gum,sigma-aldrich/[L-17] Locust bean gum from Ceratonia siliqua seeds.pdf
+M-02,메틸 알코올,67-56-1,대정화금,시약실,M-02_daejung.pdf,Methyl alcohol Methanol 메탄올,대정화금/[M-02] Methyl alcohol(67-56-1)_R17 (1).pdf
+M-02,메틸 알코올,67-56-1,삼전순약,시약실,M-02_samchun.pdf,Methyl alcohol Methanol 메탄올,삼전순약/[M-02] Methyl alcohol.pdf
+M-09,클로로벤젠,108-90-7,Hayashi Pure Chemical,시약실,M-09_hayashi.pdf,Monochlorobenzene Chlorobenzene,Hayashi pure chemical industries.Ltd/[M-09] MONCHLOROBENZENE.pdf
+M-10,메틸에틸케톤,78-93-3,Sigma-Aldrich,시약실,M-10_sigma.pdf,Methyl ethyl ketone 2-Butanone MEK,sigma-aldrich/[M-10] Methyl ethyl ketone.pdf
+M-10,메틸에틸케톤,78-93-3,대정화금,시약실,M-10_daejung.pdf,Methyl ethyl ketone MEK,대정화금/[M-10] Methyl ethyl ketone(78-93-3)_R14.pdf
+M-18,산화마그네슘(중질),1309-48-4,대정화금,시약실,M-18_daejung.pdf,Magnesium oxide heavy,대정화금/[M-18] Magnesium oxide heavy(1309-48-4)(0) (1).pdf
+M-19,말레산,110-16-7,삼전순약,시약실,M-19_samchun.pdf,Maleic acid,삼전순약/[M-19] Maleic acid.pdf
+M-23,아세트산수은(II),1600-27-7,삼전순약,시약실,M-23_samchun.pdf,Mercury(II) acetate,삼전순약/[M-23] Mercury(Ⅱ) acetate.pdf
+M-25,메타인산,37267-86-0,대정화금,시약실,M-25_daejung.pdf,Metaphosphoric acid,대정화금/[M-25] Metaphosphoric acid(3).pdf
+M-28,L-멘톨,2216-51-5,Sigma-Aldrich,시약실,M-28_sigma.pdf,L-Menthol,sigma-aldrich/[M-28] L-Menthol.pdf
+M-29,염화수은(II),7487-94-7,삼전순약,시약실,M-29_samchun.pdf,Mercuric chloride Mercury(II) chloride,삼전순약/[M-29] Mercuric chloride.pdf
+M-31,브롬화수은(II),7789-47-1,삼전순약,시약실,M-31_samchun.pdf,Mercury(II) bromide,삼전순약/[M-31] Mercury(Ⅱ) bromide.pdf
+M-37,메틸 오렌지,547-58-0,삼전순약,시약실,M-37_samchun.pdf,Methyl orange,삼전순약/[M-37] Methyl orange.pdf
+M-38,메틸 레드,493-52-7,대정화금,시약실,M-38_daejung.pdf,Methyl red,대정화금/[M-38] Methyl Red(493-52-7)_R11.pdf
+M-41,몰리브덴산,7782-91-4,Acros Organics,시약실,M-41_acros.pdf,Molybdic acid,"ACROS ORGANICS/[M-41] Molybdic_acid_MTR_KOSD_KO, for analysis.pdf"
+M-42,인몰리브덴산,51429-74-4,Junsei,시약실,M-42_junsei.pdf,Molybdophosphoric acid Phosphomolybdic acid,JUNSEI/[M-42] Molybdo(Ⅳ) phosphoric acid.pdf
+M-45,메틸 2-메톡시-5-설파모일벤조에이트,33045-52-2,Sigma-Aldrich,시약실,M-45_sigma.pdf,Methyl 2-methoxy-5-sulfamoylbenzoate,sigma-aldrich/[M-45] Methyl-2-methoxy-5-sulfamoyl benzoate.pdf
+M-46,아세트산 메틸,79-20-9,Acros Organics,시약실,M-46_acros.pdf,Methyl acetate 초산메틸,"ACROS ORGANICS/[M-46] Methyl_acetate_MTR_KOSD_KO extra dry, 99+%, Acroseal®.pdf"
+M-47,메틸 아이소부틸 케톤,108-10-1,삼전순약,시약실,M-47_samchun.pdf,4-Methyl-2-pentanone MIBK,삼전순약/[M-47] 4-Methyl-2-pentanone.pdf
+M-48,4-메틸-2-펜탄올,108-11-2,Acros Organics,시약실,M-48_acros.pdf,4-Methyl-2-pentanol,ACROS ORGANICS/[M-48] 4-Methyl-2-pentanol_MTR_KOSD_KO.pdf
+M-50,미네랄 오일,8042-47-5,Sigma-Aldrich,시약실,M-50_sigma.pdf,Mineral oil,sigma-aldrich/[M-50] Mineral oil.pdf
+M-53,3-하이드록시벤조산 메틸,19438-10-9,Sigma-Aldrich,시약실,M-53_sigma.pdf,Methyl 3-hydroxybenzoate,sigma-aldrich/[M-53] Methyl 3-hydroxybenzoate.pdf
+M-59,옥탄산 메틸,111-11-5,Alfa Aesar,시약실,M-59_alfa.pdf,Methyl octanoate,ALFA AESAR/[M-59] Methyl_octanoate_MTR_KOSD_KO.pdf
+M-60,데칸산 메틸,110-42-9,Alfa Aesar,시약실,M-60_alfa.pdf,Methyl caprate Methyl decanoate,ALFA AESAR/[M-60] Methyl_caprate_MTR_KOSD_KO - ACROS.pdf
+M-61,도데칸산 메틸,111-82-0,Alfa Aesar,시약실,M-61_alfa.pdf,Methyl dodecanoate Methyl laurate,ALFA AESAR/[M-61] Methyl_dodecanoate_MTR_KOSD_KO.pdf
+M-65,4-하이드록시벤조산 메틸,99-76-3,Sigma-Aldrich,시약실,M-65_sigma.pdf,Methyl 4-hydroxybenzoate Methylparaben 메틸파라벤,sigma-aldrich/[M-65] Methyl 4-hydroxybenzoate.pdf
+M-67,살리실산 메틸,119-36-8,삼전순약,시약실,M-67_samchun.pdf,Methyl salicylate,삼전순약/[M-67] Methyl salicylate.pdf
+M-68,메토클로프라미드 염산염,7232-21-5,Sigma-Aldrich,시약실,M-68_sigma.pdf,Metoclopramide hydrochloride,sigma-aldrich/[M-68] Metoclopramide hydrochloride.pdf
+M-70,황산마그네슘 칠수화물,10034-99-8,대정화금,시약실,M-70_daejung.pdf,Magnesium sulfate heptahydrate,대정화금/[M-70] Magnesium sulfate heptahydrate(10034-99-8)_R10.pdf
+M-71,분자체 0.3 nm,1318-02-1,Metrohm,시약실,M-71_metrohm.pdf,Molecular sieve 3A 몰레큘러시브,Metrohm/[M-71] Molecular sieve 0.3 nm.pdf
+M-72,메탄올,67-56-1,Honeywell Fluka,시약실,M-72_fluka.pdf,Methanol 메틸알코올,Honeywell fluka/[M-72] Methanol.pdf
+M-73,메타크릴산,79-41-4,삼전순약,시약실,M-73_samchun.pdf,Methacrylic acid,"삼전순약/[M-73] Methacrylic acid, stabilized.pdf"
+M-74,염화마그네슘(무수),7786-30-3,삼전순약,시약실,M-74_samchun.pdf,Magnesium chloride anhydrous,"삼전순약/[M-74] Magnesium chloride, anhydrous 98.0%.pdf"
+M-75,만델산,90-64-2,Sigma-Aldrich,시약실,M-75_sigma.pdf,Mandelic acid,sigma-aldrich/[M-75] Mandelic acid.pdf
+M-76,메틸사이클로헥산,108-87-2,Sigma-Aldrich,시약실,M-76_sigma.pdf,Methylcyclohexane,sigma-aldrich/[M-76] Methylcyclohexane.pdf
+M-81,3-머캅토프로피온산,107-96-0,Sigma-Aldrich,시약실,M-81_sigma.pdf,3-Mercaptopropionic acid,sigma-aldrich/[M-81] 3-Mercaptopropionic acid.pdf
+M-82,요오드화수은(II),7774-29-0,Sigma-Aldrich,시약실,M-82_sigma.pdf,Mercury(II) iodide,sigma-aldrich/[M-82] Mercury(Ⅱ) iodide.pdf
+M-83,염화수은(II),7487-94-7,Sigma-Aldrich,시약실,M-83_sigma.pdf,Mercury(II) chloride 염화제이수은,sigma-aldrich/[M-83] Mercury(Ⅱ) chloride.pdf
+M-84,2-메틸-1-나프틸아민,2246-44-8,Sigma-Aldrich,시약실,M-84_sigma.pdf,2-Methyl-1-naphthylamine,sigma-aldrich/[M-84] 2-Methyl-1-naphthylamine.pdf
+M-85,3-메틸-2-벤조티아졸리논 하이드라존 염산염 일수화물,38894-11-0,Sigma-Aldrich,시약실,M-85_sigma.pdf,MBTH,sigma-aldrich/[M-85] 3-Methyl-2-benzothiazolinone hydrazone hydrochloride monohydrate.pdf
+M-86,1-메틸-2-피롤리디논,872-50-4,Sigma-Aldrich,시약실,M-86_sigma.pdf,1-Methyl-2-pyrrolidinone NMP,sigma-aldrich/[M-86] 1-Methyl-2-pyrrolidinone.pdf
+N-01,질산 0.1N 용액,7697-37-2,대정화금,시약실,N-01_daejung.pdf,Nitric acid,대정화금/[N-01] Nitric acid.pdf
+N-12,닌하이드린,485-47-2,대정화금,시약실,N-12_daejung.pdf,Ninhydrin,대정화금/[N-12] Ninhydrin(485-47-2)_1.pdf
+N-19,니트릴로트리아세트산,139-13-9,대정화금,시약실,N-19_daejung.pdf,Nitrilotriacetic acid NTA,대정화금/[N-19] Nitrilotriacetic acid(139-13-9)(0).pdf
+N-20,니코틴아마이드,98-92-0,Sigma-Aldrich,시약실,N-20_sigma.pdf,Nicotinamide,sigma-aldrich/[N-20] Nicotinamide.pdf
+N-22,p-나프톨벤제인,145-50-6,Fujifilm Wako,시약실,N-22_wako.pdf,p-Naphtholbenzein,Fujifilm wako pure chemical corporation/[N-22] p-Naphtholbenzein.pdf
+N-24,나프톨 옐로 S,846-70-8,Sigma-Aldrich,시약실,N-24_sigma.pdf,Naphthol Yellow S,sigma-aldrich/[N-24] Naphtol Yellow S.pdf
+O-01,n-옥탄,111-65-9,Acros Organics,시약실,O-01_acros.pdf,n-Octane,"ACROS ORGANICS/[O-01] n-Octane_MTR_KOSD_KO  Acroseal®, 99+%.pdf"
+O-05,1-옥탄설폰산 나트륨,5324-84-5,Fujifilm Wako,시약실,O-05_wako.pdf,1-Octanesulfonic acid sodium salt,Fujifilm wako pure chemical corporation/[O-05] 1-Octanesulfonic Acid Sodium Salt.pdf
+O-10,옥탄산,124-07-2,Fujifilm Wako,시약실,O-10_wako.pdf,Octanoic acid Caprylic acid,Wako/[O-10] Octanoic acid.pdf
+O-13,1-옥탄올,111-87-5,Sigma-Aldrich,시약실,O-13_sigma.pdf,1-Octanol,sigma-aldrich/[O-13] 1-Octonol.pdf
+O-15,L-오르니틴 L-아스파르트산염,3230-94-2,Sigma-Aldrich,시약실,O-15_sigma.pdf,L-Ornithine L-aspartate,sigma-aldrich/[O-15] L-Ornithine L-aspartate salt.pdf
+P-01,인산,7664-38-2,대정화금,시약실,P-01_daejung.pdf,Phosphoric acid,대정화금/[P-01] Phosphoric acid_R14.pdf
+P-01,인산,7664-38-2,삼전순약,시약실,P-01_samchun.pdf,Phosphoric acid,삼전순약/[P-01] Phosphoric acid.pdf
+P-02,과염소산,7601-90-3,삼전순약,시약실,P-02_samchun.pdf,Perchloric acid,삼전순약/[P-02] Perchloric acid.pdf
+P-03,석유벤진,8030-30-6,Matsunoen Chemicals,시약실,P-03_matsunoen.pdf,Petroleum benzine,Matsunoen chemicals/[P-03] Petroleum benzine.pdf
+P-06,피리딘,110-86-1,Sigma-Aldrich,시약실,P-06_sigma.pdf,Pyridine,sigma-aldrich/[P-06] Pyridine.pdf
+P-07,석유 에테르,혼합물,삼전순약,시약실,P-07_samchun.pdf,Petroleum ether,삼전순약/[P-07] Petroleum Ether.pdf
+P-10,1-프로판올,71-23-8,삼전순약,시약실,P-10_samchun.pdf,1-Propanol Propyl alcohol,삼전순약/[P-10] 1-Propanol .pdf
+P-14,o-페난트롤린 염산염,18851-33-7,Junsei,시약실,P-14_junsei.pdf,o-Phenanthroline hydrochloride,JUNSEI/[P-14] o-Phenanthroline hydrochloeide  .pdf
+P-16,"1,10-페난트롤린 일수화물",5144-89-8,Sigma-Aldrich,시약실,P-16_sigma.pdf,"1,10-Phenanthroline monohydrate","sigma-aldrich/[P-16] 1,10-Phenanthroline monohydrate.pdf"
+P-18,페놀프탈레인,77-09-8,대정화금,시약실,P-18_daejung.pdf,Phenolphthalein,대정화금/[P-18] Phenolphthalein(77-09-8)_R13.pdf
+P-19,1-펜탄설폰산 나트륨,22767-49-3,Fujifilm Wako,시약실,P-19_wako.pdf,1-Pentanesulfonic acid sodium salt,"Fujifilm wako pure chemical corporation/[P-19] 1-Pentanesulfonic acid, sodium salt.pdf"
+P-20,프로게스테론,57-83-0,Acros Organics,시약실,P-20_acros.pdf,Progesterone,ACROS ORGANICS/[P-20] Progesterone_MTR_KOSD_KO.pdf
+P-21,팔미트산,57-10-3,Sigma-Aldrich,시약실,P-21_sigma.pdf,Palmitic acid,sigma-aldrich/[P-21] Palmitic acid.pdf
+P-23,요오드화칼륨,7681-11-0,삼전순약,시약실,P-23_samchun.pdf,Potassium iodide,삼전순약/[P-23] Potassium Iodide.pdf
+P-26,오산화인,1314-56-3,대정화금,시약실,P-26_daejung.pdf,Phosphorus pentoxide,대정화금/[P-26] Phosphorus pentoxide(1314-56-3).pdf
+P-27,무수프탈산,85-44-9,Sigma-Aldrich,시약실,P-27_sigma.pdf,Phthalic anhydride,sigma-aldrich/[P-27] Phthalic anhydride .pdf
+P-29,폴리비닐 알코올,9002-89-5,대정화금,시약실,P-29_daejung.pdf,Polyvinyl alcohol PVA,대정화금/[P-29] Polyvinyl alocohol.pdf
+P-30,아세트산칼륨,127-08-2,삼전순약,시약실,P-30_samchun.pdf,Potassium acetate 초산칼륨,삼전순약/[P-30] Potassium acetate.pdf
+P-35,브롬산칼륨,7758-01-2,대정화금,시약실,P-35_daejung.pdf,Potassium bromate,대정화금/[P-35] Potassium bromate(7758-01-2)_1 (2).pdf
+P-36,브롬화칼륨,7758-02-3,Thermo Fisher,시약실,P-36_thermo.pdf,Potassium bromide,Thermo/[P-36] Potassium bromide.pdf
+P-37,탄산칼륨(무수),584-08-7,대정화금,시약실,P-37_daejung.pdf,Potassium carbonate anhydrous,대정화금/[P-37] Potassium carbonate anhydrous_R9.pdf
+P-39,염화칼륨,7447-40-7,대정화금,시약실,P-39_daejung.pdf,Potassium chloride,대정화금/[P-39] Potassium chloride (7447-40-7)_R14_1.pdf
+P-41,시안화칼륨,151-50-8,삼전순약,시약실,P-41_samchun.pdf,Potassium cyanide,삼전순약/[P-41] Potassium cyanide.pdf
+P-42,중크롬산칼륨,7778-50-9,Junsei,시약실,P-42_junsei.pdf,Potassium dichromate,JUNSEI/[P-42] Potassium dichromate.pdf
+P-43,피로인산칼륨,7320-34-5,Acros Organics,시약실,P-43_acros.pdf,Potassium diphosphate Potassium pyrophosphate,ACROS ORGANICS/[P-43] Potassium_diphosphate_MTR_KOSD_KO.pdf
+P-45,페로시안화칼륨 삼수화물,14459-95-1,삼전순약,시약실,P-45_samchun.pdf,Potassium ferrocyanide,삼전순약/[P-45] Potassium ferrocyanide.pdf
+P-46,프탈산수소칼륨,877-24-7,삼전순약,시약실,P-46_samchun.pdf,Potassium hydrogen phthalate KHP,삼전순약/[P-46] Potassium hydrogen phthalate.pdf
+P-47,황산수소칼륨(특급),7646-93-7,Junsei,시약실,P-47_junsei.pdf,Potassium hydrogen sulfate,JUNSEI/[P-47] Potassium hydrogen sulfate (Guaranteed Reagent).pdf
+P-47,황산수소칼륨(1급),7646-93-7,Junsei,시약실,P-47_junsei_2.pdf,Potassium hydrogen sulfate,JUNSEI/[P-47] Potassium hydrogen sulfate (extra pure).pdf
+P-48,수산화칼륨,1310-58-3,대정화금,시약실,P-48_daejung.pdf,Potassium hydroxide,대정화금/[P-48] Potassium hydroxide.pdf
+P-50,질산칼륨,7757-79-1,대정화금,시약실,P-50_daejung.pdf,Potassium nitrate,대정화금/[P-50] Potassium nitrate(7757-79-1)_R10.pdf
+P-51,과망간산칼륨,7722-64-7,대정화금,시약실,P-51_daejung.pdf,Potassium permanganate,대정화금/[P-51] Potassium permanganate(7722-64-7)_R14_1.pdf
+P-51,인산수소이칼륨(무수),7758-11-4,대정화금,시약실,P-51_daejung_2.pdf,Potassium phosphate dibasic anhydrous,대정화금/[P-51] Potassium phosphate dibasic anhydrous(7758-11-4)_R8.pdf
+P-53,인산이수소칼륨,7778-77-0,대정화금,시약실,P-53_daejung.pdf,Potassium phosphate monobasic,대정화금/[P-53] Potassium phosphate monobasic(7778-77-0)_R11.pdf
+P-56,타르타르산나트륨칼륨 사수화물,6381-59-5,삼전순약,시약실,P-56_samchun.pdf,Potassium sodium tartrate Rochelle salt 로셸염,"삼전순약/[P-56] Potassium sodium tartrate, 4-hydrate.pdf"
+P-57,황산칼륨,7778-80-5,대정화금,시약실,P-57_daejung.pdf,Potassium sulfate,대정화금/[P-57] Potassium sulfate(7778-80-5)_2.pdf
+P-58,페놀 레드,143-74-8,삼전순약,시약실,P-58_samchun.pdf,Phenol red,삼전순약/[P-58] Phenol red.pdf
+P-59,요오드산칼륨,7758-05-6,Sigma-Aldrich,시약실,P-59_sigma.pdf,Potassium iodate,sigma-aldrich/[P-59] Potassium iodate.pdf
+P-62,L-페닐알라닌,63-91-2,Sigma-Aldrich,시약실,P-62_sigma.pdf,L-Phenylalanine,sigma-aldrich/[P-62] L-Phenylalanine.pdf
+P-63,2-피롤리디논,616-45-5,Acros Organics,시약실,P-63_acros.pdf,2-Pyrrolidinone,ACROS ORGANICS/[P-63] 2-Pyrrolidinone_MTR_KOSD_KO.pdf
+P-64,페놀,108-95-2,삼전순약,시약실,P-64_samchun.pdf,Phenol 석탄산,삼전순약/[P-64] Phenol.pdf
+P-68,1-펜탄올,71-41-0,Acros Organics,시약실,P-68_acros.pdf,1-Pentanol,ACROS ORGANICS/[P-68] 1-Pentanol_MTR_KOSD_KO.pdf
+P-72,프로필렌 글리콜,57-55-6,삼전순약,시약실,P-72_samchun.pdf,Propylene glycol,삼전순약/[P-72] Propylene glycol.pdf
+P-73,페나세틴(녹는점 표준물질),62-44-2,Sigma-Aldrich,시약실,P-73_sigma.pdf,Phenacetin,sigma-aldrich/[P-73] Phenacetin melting point standard.pdf
+P-74,과망간산칼륨 용액,7722-64-7,삼전순약,시약실,P-74_samchun.pdf,Potassium permanganate solution,삼전순약/[P-74] 0.02mol;L-Potassium permanganate solution(N;10).pdf
+P-77,DL-페닐알라닌,150-30-1,Sigma-Aldrich,시약실,P-77_sigma.pdf,DL-Phenylalanine,sigma-aldrich/[P-77] DL-Phenylalanine.pdf
+P-80,인몰리브덴산 수화물,51429-74-4,Sigma-Aldrich,시약실,P-80_sigma.pdf,Phosphomolybdic acid hydrate,sigma-aldrich/[P-80] Phosphomolybdic acid hydrate.pdf
+P-81,폴리비닐 알코올 500,9002-89-5,삼전순약,시약실,P-81_samchun.pdf,Polyvinyl alcohol 500 PVA,삼전순약/[P-81] Polyvinyl alcohol #500.pdf
+P-82,폴리비닐 알코올 1500,9002-89-5,대정화금,시약실,P-82_daejung.pdf,Polyvinyl alcohol 1500 PVA,대정화금/[P-82] Polyvinyl alcohol 1500(9002-89-5)_R5 (2).pdf
+P-83,피페라진,110-85-0,Sigma-Aldrich,시약실,P-83_sigma.pdf,Piperazine,sigma-aldrich/[P-83] Piperazine.pdf
+P-84,석유 에테르(끓는점 100~140℃),64742-49-0,Acros Organics,시약실,P-84_acros.pdf,Petroleum ether,ACROS ORGANICS/[P-84] Petroleum_ether__boiling_range_100-140__MTR_KOSD_KO.pdf
+P-85,인산수소이칼륨 삼수화물,16788-57-1,Sigma-Aldrich,시약실,P-85_sigma.pdf,Potassium phosphate dibasic trihydrate,sigma-aldrich/[P-85] Potassium phosphate diabasic trihydrate.pdf
+P-86,피로황산칼륨(1급),7790-62-7,Junsei,시약실,P-86_junsei.pdf,Potassium disulfate Potassium pyrosulfate,JUNSEI/[P-86] Potassium disulfate (Extra pure).pdf
+P-86,피로황산칼륨(특급),7790-62-7,Junsei,시약실,P-86_junsei_2.pdf,Potassium disulfate Potassium pyrosulfate,JUNSEI/[P-86] Potassium disulfate (Guaranteed Reagent).pdf
+Q-01,퀴날딘 레드,117-92-0,Sigma-Aldrich,시약실,Q-01_sigma.pdf,Quinaldine red,sigma-aldrich/[Q-01] Quinaldine red.pdf
+R-02,레조르시놀,108-46-3,삼전순약,시약실,R-02_samchun.pdf,Resorcinol,삼전순약/[R-02] Resorcinol .pdf
+R-03,라이네케염 일수화물,13573-17-6,Junsei,시약실,R-03_junsei.pdf,Reinecke salt,"JUNSEI/[R-03] Reinecke salt, monohydrate.pdf"
+R-04,리보플라빈,83-88-5,Sigma-Aldrich,시약실,R-04_sigma.pdf,Riboflavin 비타민B2,sigma-aldrich/[R-04] Riboflavin .pdf
+S-01,황산,7664-93-9,삼전순약,시약실,S-01_samchun.pdf,Sulfuric acid,삼전순약/[S-01] Sulfuric acid.pdf
+S-06,옥살산나트륨,62-76-0,삼전순약,시약실,S-06_samchun.pdf,Sodium oxalate 수산나트륨,삼전순약/[S-06] Sodium oxalate.pdf
+S-07,아질산코발트나트륨,13600-98-1,대정화금,시약실,S-07_daejung.pdf,Sodium cobaltinitrite,대정화금/[S-07] Sodium cobaltinitrite(13600-98-1).pdf
+S-08,디에틸디티오카르밤산나트륨 삼수화물,20624-25-3,삼전순약,시약실,S-08_samchun.pdf,"Sodium N,N-diethyldithiocarbamate trihydrate","삼전순약/[S-08] Sodium N,N-diethyldithio-carbamate trihydrate.pdf"
+S-09,도데실벤젠설폰산 나트륨,25155-30-0,Kanto Chemical,시약실,S-09_kanto.pdf,Sodium dodecylbenzenesulfonate,kanto chemical/[S-09] Sodium dodecylbenzenesulfonate.pdf
+S-10,테트라페닐붕산나트륨,143-66-8,Sigma-Aldrich,시약실,S-10_sigma.pdf,Sodium tetraphenylborate,sigma-aldrich/[S-10] Sodium tetraphenylborate.pdf
+S-11,질산은 0.1N 표준용액,7761-88-8,Acros Organics,시약실,S-11_acros.pdf,Silver nitrate solution,ACROS ORGANICS/[S-11] Silver_nitrate__0.1N_standard_solution_MTR_KOSD_KO 0.1N standard solution.pdf
+S-16,수산화나트륨 0.5N 용액,1310-73-2,대정화금,시약실,S-16_daejung.pdf,Sodium hydroxide 가성소다,대정화금/[S-16] Sodium hydroxide.pdf
+S-18,자당,57-50-1,대정화금,시약실,S-18_daejung.pdf,Saccharose Sucrose 수크로스 사카로스,대정화금/[S-18] Saccharose(57-50-1)_R7.pdf
+S-20,가용성 전분,9005-25-8,Sigma-Aldrich,시약실,S-20_sigma.pdf,Starch soluble 녹말,sigma-aldrich/[S-20] Starch soluble.pdf
+S-21,감자 전분,9005-25-8,삼전순약,시약실,S-21_samchun.pdf,Starch potato 녹말,삼전순약/[S-21] Starch potato.pdf
+S-22,설팜산,5329-14-6,삼전순약,시약실,S-22_samchun.pdf,Sulfamic acid 술팜산,삼전순약/[S-22] sulfamic acid.pdf
+S-24,아세트산나트륨 삼수화물,6131-90-4,삼전순약,시약실,S-24_samchun.pdf,Sodium acetate trihydrate 초산나트륨,"삼전순약/[S-24] Sodium acetate, trihydrate.pdf"
+S-25,아세트산나트륨(무수),127-09-3,삼전순약,시약실,S-25_samchun.pdf,Sodium acetate anhydrous 초산나트륨,"삼전순약/[S-25] Sodium acetate, anhydrous.pdf"
+S-26,비산수소이나트륨 칠수화물,10048-95-0,대정화금,시약실,S-26_daejung.pdf,Sodium arsenate dibasic heptahydrate,대정화금/[S-26] Sodium arsenate dibasic heptahydrate(10048-95-0)_R3.pdf
+S-27,아지드화나트륨,26628-22-8,대정화금,시약실,S-27_daejung.pdf,Sodium azide,대정화금/[S-27] Sodium azide(26628-22-8)_R11.pdf
+S-28,탄산수소나트륨,144-55-8,삼전순약,시약실,S-28_samchun.pdf,Sodium bicarbonate 중탄산나트륨 베이킹소다,삼전순약/[S-28] Sodium bicarbonate.pdf
+S-29,수소화붕소나트륨,16940-66-2,Kanto Chemical,시약실,S-29_kanto.pdf,Sodium borohydride,kanto chemical/[S-29] Sodium borohydride.pdf
+S-30,브롬화나트륨,7647-15-6,대정화금,시약실,S-30_daejung.pdf,Sodium bromide,대정화금/[S-30] Sodium bromide_1.pdf
+S-31,벤조산나트륨,532-32-1,Sigma-Aldrich,시약실,S-31_sigma.pdf,Sodium benzoate,sigma-aldrich/[S-31] Sodium benzoate.pdf
+S-33,탄산나트륨(무수),497-19-8,삼전순약,시약실,S-33_samchun.pdf,Sodium carbonate anhydrous,"삼전순약/[S-33] Sodium carbonate, anhydrous.pdf"
+S-34,염화나트륨,7647-14-5,삼전순약,시약실,S-34_samchun.pdf,Sodium chloride,삼전순약/[S-34] Sodium chloride.pdf
+S-35,인산이수소나트륨 이수화물,13472-35-0,대정화금,시약실,S-35_daejung.pdf,Sodium phosphate monobasic dihydrate,대정화금/[S-35] Sodium phosphate monobasic dihydrate(13472-35-0)_R10 (1).pdf
+S-36,불화나트륨,7681-49-4,Sigma-Aldrich,시약실,S-36_sigma.pdf,Sodium fluoride 플루오린화나트륨,sigma-aldrich/[S-36] Sodium fluoride.pdf
+S-37,아황산수소나트륨,7631-90-5,대정화금,시약실,S-37_daejung.pdf,Sodium hydrogen sulfite 중아황산나트륨,대정화금/[S-37] Sodium hydrogen sulfite(7631-90-5)_R7.pdf
+S-38,하이드로설파이트나트륨,7775-14-6,대정화금,시약실,S-38_daejung.pdf,Sodium hydrosulfite Sodium dithionite,대정화금/[S-38] Sodium hydrosulfite(7775-14-6)_R8.pdf
+S-39,과산화이황산나트륨,7775-27-1,Junsei,시약실,S-39_junsei.pdf,Sodium peroxodisulfate Sodium persulfate 과황산나트륨,JUNSEI/[S-39] Sodium peroxodisulfate.pdf
+S-40,타르타르산수소나트륨 일수화물,6131-98-2,Junsei,시약실,S-40_junsei.pdf,Sodium hydrogen tartrate,"JUNSEI/[S-40] Sodium hydrogen tartrate, monohydrate.pdf"
+S-41,몰리브덴산나트륨 이수화물,10102-40-6,대정화금,시약실,S-41_daejung.pdf,Sodium molybdate dihydrate,대정화금/[S-41] Sodium molybdate(VI) dihydrate(10102-40-6)_1.pdf
+S-42,질산나트륨,7631-99-4,삼전순약,시약실,S-42_samchun.pdf,Sodium nitrate,삼전순약/[S-42] Sodium nitrate.pdf
+S-43,과요오드산나트륨,7790-28-5,대정화금,시약실,S-43_daejung.pdf,Sodium periodate,대정화금/[S-43] Sodium periodate(7790-28-5).pdf
+S-44,인산수소이나트륨 십이수화물,10039-32-4,대정화금,시약실,S-44_daejung.pdf,Sodium phosphate dibasic dodecahydrate,대정화금/[S-44] Sodium phosphate dibasic dodecahydrate(10039-32-4)_R7.pdf
+S-45,시트르산나트륨 이수화물,6132-04-3,대정화금,시약실,S-45_daejung.pdf,Sodium citrate dihydrate 구연산나트륨,대정화금/[S-45] Sodium citrate dihydrate(6132-04-3)_R10.pdf
+S-46,메타중아황산나트륨,7681-57-4,대정화금,시약실,S-46_daejung.pdf,Sodium metabisulfite,대정화금/[S-46] Sodium metabisulfite(7681-57-4)_1.pdf
+S-48,붕산나트륨 십수화물,1303-96-4,대정화금,시약실,S-48_daejung.pdf,Sodium borate decahydrate Borax 붕사,대정화금/[S-48] Sodium borate decahydrate_1.pdf
+S-49,인산수소이나트륨(무수),7558-79-4,삼전순약,시약실,S-49_samchun.pdf,Sodium phosphate dibasic anhydrous,"삼전순약/[S-49] Sodium phosphate dibasic, anhydrous.pdf"
+S-50,도데실황산나트륨,151-21-3,Sigma-Aldrich,시약실,S-50_sigma.pdf,Sodium dodecyl sulfate SDS,sigma-aldrich/[S-50] Dodecyl sulfate sodium salt.pdf
+S-51,황산나트륨(무수),7757-82-6,대정화금,시약실,S-51_daejung.pdf,Sodium sulfate anhydrous,대정화금/[S-51] Sodium sulfate anhydrous(7757-82-6)_1.pdf
+S-52,티오황산나트륨 오수화물,10102-17-7,삼전순약,시약실,S-52_samchun.pdf,Sodium thiosulfate pentahydrate,"삼전순약/[S-52] Sodium thiosulfate, 5-hydrate.pdf"
+S-53,실리카겔(청색),7631-86-9,대정화금,시약실,S-53_daejung.pdf,Silica gel blue,대정화금/[S-53] Silica gel.pdf
+S-56,아황산나트륨(무수),7757-83-7,대정화금,시약실,S-56_daejung.pdf,Sodium sulfite anhydrous,대정화금/[S-56] Sodium sulfite anhydrous(7757-83-7)_R10.pdf
+S-61,과염소산나트륨 일수화물,7791-07-3,Acros Organics,시약실,S-61_acros.pdf,Sodium perchlorate monohydrate,ACROS ORGANICS/[S-61] Sodium_perchlorate_monohydrate_MTR_KOSD_KO.pdf
+S-65,황산은,10294-26-5,삼전순약,시약실,S-65_samchun.pdf,Silver sulfate,삼전순약/[S-65] Silver sulfate.pdf
+S-66,인산이수소나트륨 이수화물,13472-35-0,Carl Roth,시약실,S-66_carlroth.pdf,Sodium dihydrogen phosphate dihydrate,"Carl roth gmbh+co.kg/[S-66] Sodium hydrogen phosphate, dihydrate.pdf"
+S-73,해사(300~600 μm),14808-60-7,Fujifilm Wako,시약실,S-73_wako.pdf,Sea sand 바다모래,Wako/[S-73] Sea Sand 300~600um.pdf
+S-74,티오황산나트륨 0.05 mol/L 표준용액,10102-17-7,대정화금,시약실,S-74_daejung.pdf,Sodium thiosulfate solution,대정화금/[S-74] 0.05mol Sodium thiosulfate standard solution(0.05N)(2).pdf
+S-76,선셋 옐로 FCF,2783-94-0,Fujifilm Wako,시약실,S-76_wako.pdf,Sunset Yellow FCF,Wako/[S-76] Sunset Yellow FCF.pdf
+S-78,수산화나트륨 0.1 mol/L 용액,1310-73-2,삼전순약,시약실,S-78_samchun.pdf,Sodium hydroxide solution 가성소다,삼전순약/[S-78] 0.1mol;L - Sodium hydroxide solution(N;10).pdf
+S-81,설파닐산,121-57-3,삼전순약,시약실,S-81_samchun.pdf,Sulfanilic acid,삼전순약/[S-81] Sulfanilic acid.pdf
+S-83,질산은 0.1 mol/L 용액,7761-88-8,삼전순약,시약실,S-83_samchun.pdf,Silver nitrate solution,삼전순약/[S-83] 0.1M-Silver nitrate solution(N;10).pdf
+S-84,불화나트륨,7681-49-4,Sigma-Aldrich,시약실,S-84_sigma.pdf,Sodium fluoride 플루오린화나트륨,sigma-aldrich/[S-84] Sodium fluoride.pdf
+S-85,질산은 0.05 mol/L 용액,7761-88-8,삼전순약,시약실,S-85_samchun.pdf,Silver nitrate solution,삼전순약/[S-85] 0.05moL;L Silver nitrate solution.pdf
+S-86,trans-스틸벤 옥사이드,1439-07-2,Sigma-Aldrich,시약실,S-86_sigma.pdf,trans-Stilbene oxide,sigma-aldrich/[S-86] trans-Stilbene oxide.pdf
+S-87,인산이수소나트륨,7558-80-7,Sigma-Aldrich,시약실,S-87_sigma.pdf,Sodium phosphate monobasic,sigma-aldrich/[S-87] Sodium phosphate monobasic.pdf
+S-88,인산수소이나트륨 칠수화물,7782-85-6,Sigma-Aldrich,시약실,S-88_sigma.pdf,Sodium phosphate dibasic heptahydrate,sigma-aldrich/[S-88] Sodium phosphate dibasic heptahydrate.pdf
+S-89,인산삼나트륨 십이수화물,10101-89-0,Sigma-Aldrich,시약실,S-89_sigma.pdf,Sodium phosphate tribasic dodecahydrate,sigma-aldrich/[S-89] Sodium phosphate tribasic dodecahydrate.pdf
+S-90,인산이수소나트륨 일수화물,10049-21-5,Sigma-Aldrich,시약실,S-90_sigma.pdf,Sodium phosphate monobasic monohydrate,sigma-aldrich/[S-90] Sodium phosphate monobasic monohydrate.pdf
+S-91,인산삼나트륨,7601-54-9,Sigma-Aldrich,시약실,S-91_sigma.pdf,Sodium phosphate tribasic,sigma-aldrich/[S-91] Sodium phosphate.pdf
+T-01,테트라하이드로퓨란(HPLC),109-99-9,삼전순약,시약실,T-01_samchun.pdf,Tetrahydrofuran THF,삼전순약/[T-01] Tetrahydrofuran (HPLC).pdf
+T-02,트리에탄올아민,102-71-6,삼전순약,시약실,T-02_samchun.pdf,Triethanolamine TEA,"삼전순약/[T-02] triethanolamine,99%.pdf"
+T-04,톨루엔,108-88-3,대정화금,시약실,T-04_daejung.pdf,Toluene,대정화금/[T-04] Toluene(108-88-3)_1.pdf
+T-05,트윈 80,9005-65-6,대정화금,시약실,T-05_daejung.pdf,Tween 80 Polysorbate 80,대정화금/[T-05] Tween 80(9005-65-6)_R8.pdf
+T-05,트윈 80,9005-65-6,삼전순약,시약실,T-05_samchun.pdf,Tween 80 Polysorbate 80,삼전순약/[T-05] Tween 80.pdf
+T-07,브롬화 테트라부틸암모늄,1643-19-2,Junsei,시약실,T-07_junsei.pdf,Tetrabutylammonium bromide TBAB,JUNSEI/[T-07] Tetrabutyl ammonium bromide.pdf
+T-08,메틸 tert-부틸 에테르,1634-04-4,Sigma-Aldrich,시약실,T-08_sigma.pdf,tert-Butyl methyl ether MTBE,sigma-aldrich/[T-08] Tert Buthyl methyl ether.pdf
+T-09,o-톨루이딘,95-53-4,Acros Organics,시약실,T-09_acros.pdf,o-Toluidine,ACROS ORGANICS/[T-09] o-Toluidine_MTR_KOSD_KO.pdf
+T-10,수산화 테트라메틸암모늄 오수화물,10424-65-4,Acros Organics,시약실,T-10_acros.pdf,Tetramethylammonium hydroxide pentahydrate TMAH,ACROS ORGANICS/[T-10] Tetramethylammonium_hydroxide_pentahydrate_MTR_KOSD_KO 97%.pdf
+T-15,요오드화 테트라부틸암모늄,311-28-4,대정화금,시약실,T-15_daejung.pdf,Tetrabutylammonium iodide,대정화금/[T-15] Tetrabutylammonium iodide.pdf
+T-20,티오아세트아마이드,62-55-5,Sigma-Aldrich,시약실,T-20_sigma.pdf,Thioacetamide,sigma-aldrich/[T-20] Thioacetamide.pdf
+T-20,티오아세트아마이드,62-55-5,대정화금,시약실,T-20_daejung.pdf,Thioacetamide,대정화금/[T-20] Thioacetamide(62-55-5) (1).pdf
+T-23,트리에틸아민(1급),121-44-8,Junsei,시약실,T-23_junsei.pdf,Triethylamine TEA,JUNSEI/[T-23] Triethylamine (Extra pure).pdf
+T-23,트리에틸아민(특급),121-44-8,Junsei,시약실,T-23_junsei_2.pdf,Triethylamine TEA,JUNSEI/[T-23] Triethylamine (Graranteed Reagent).pdf
+T-24,황산수소 테트라부틸암모늄,32503-27-8,대정화금,시약실,T-24_daejung.pdf,Tetrabutylammonium hydrogen sulfate,대정화금/[T-24] Tetrabutylammonium hydrogen sulfate(32503-27-8).pdf
+T-26,염화주석(II) 이수화물,10025-69-1,삼전순약,시약실,T-26_samchun.pdf,Tin(II) chloride dihydrate,"삼전순약/[T-26] Tin(Ⅱ) chloride, dihydrate.pdf"
+T-27,이산화티타늄,13463-67-7,삼전순약,시약실,T-27_samchun.pdf,Titanium dioxide,삼전순약/[T-27] Titanium Dioxide.pdf
+T-28,트리클로로아세트산,76-03-9,삼전순약,시약실,T-28_samchun.pdf,Trichloroacetic acid TCA,삼전순약/[T-28] Trichloroacetic acid.pdf
+T-30,트리스(하이드록시메틸)아미노메탄,77-86-1,대정화금,시약실,T-30_daejung.pdf,Tris(hydroxymethyl)aminomethane Tris 트리스,대정화금/[T-30] Tris(hydroxymethyl)aminomethane(77-86-1)_R10.pdf
+T-31,인산삼나트륨 십이수화물,10101-89-0,삼전순약,시약실,T-31_samchun.pdf,Trisodium phosphate dodecahydrate,"삼전순약/[T-31] Trisodium phosphate, 12H2O.pdf"
+T-33,L(+)-타르타르산,87-69-4,삼전순약,시약실,T-33_samchun.pdf,L-Tartaric acid 주석산,삼전순약/[T-33] L(+)-Tartaric acid.pdf
+T-36,티몰 블루,76-61-9,대정화금,시약실,T-36_daejung.pdf,Thymol blue,대정화금/[T-36] Thymol Blue(76-61-9)(0).pdf
+T-42,트윈 20,9005-64-5,삼전순약,시약실,T-42_samchun.pdf,Tween 20 Polysorbate 20,삼전순약/[T-42] Tween 20.pdf
+T-43,o-톨리딘,119-93-7,대정화금,시약실,T-43_daejung.pdf,o-Tolidine,대정화금/[T-43] o-Tolidine(3).pdf
+T-44,탄닌산,1401-55-4,Sigma-Aldrich,시약실,T-44_sigma.pdf,Tannic acid,sigma-aldrich/[T-44] Tannic acid.pdf
+T-48,1-(트리메틸실릴)이미다졸,18156-74-6,Alfa Aesar,시약실,T-48_alfa.pdf,1-(Trimethylsilyl)imidazole,ALFA AESAR/[T-48] 1-(Trimethylsilyl_MTR_KOSD_KO.pdf
+T-49,"2,2,2-트리클로로에탄올",115-20-8,Sigma-Aldrich,시약실,T-49_sigma.pdf,"2,2,2-Trichloroethanol","sigma-aldrich/[T-49] 2,2,2-Trichloroethanol.pdf"
+T-50,테트라하이드로퓨란,109-99-9,J.T.Baker,시약실,T-50_jtbaker.pdf,Tetrahydrofuran THF,J.T.Baker/[T-50] Tetrahydrofuran.pdf
+T-51,"2,2,4-트리메틸펜탄(HPLC)",540-84-1,삼전순약,시약실,T-51_samchun.pdf,"2,2,4-Trimethylpentane Isooctane 이소옥탄","삼전순약/[T-51] 2,2,4-Trimethylpentane(HPLC).pdf"
+T-51,테트라하이드로퓨란(무안정제),109-99-9,삼전순약,시약실,T-51_samchun_2.pdf,Tetrahydrofuran non-stabilized THF,"삼전순약/[T-51] tetrahyrofuran, Non-stabilized, 99.9%.pdf"
+T-54,황산수소 테트라부틸암모늄,32503-27-8,Sigma-Aldrich,시약실,T-54_sigma.pdf,Tetrabutylammonium bisulfate,sigma-aldrich/[T-54] Tetrabutylammonium bisulfate.pdf
+T-55,타르트라진,1934-21-0,Fujifilm Wako,시약실,T-55_wako.pdf,Tartrazine,Wako/[T-55] Tartrazine.pdf
+T-56,트리페닐메틸 클로라이드,76-83-5,대정화금,시약실,T-56_daejung.pdf,Triphenylmethyl chloride Trityl chloride,대정화금/[T-56] Triphenylmethyl chloride(0).pdf
+T-58,수산화 테트라부틸암모늄 용액,2052-49-5,Supelco,시약실,T-58_supelco.pdf,Tetrabutylammonium hydroxide solution TBAH,Supelco/[T-58} Tetra-n-butylammonium hydroxide solution.pdf
+T-60,트로메타민,77-86-1,Sigma-Aldrich,시약실,T-60_sigma.pdf,Tromethamine Tris 트리스,sigma-aldrich/[T-60] Tromethamine.pdf
+T-62,염화티타늄(III) 용액(1 mol/L),7705-07-9,Kanto Chemical,시약실,T-62_kanto.pdf,Titanium(III) chloride solution,"kanto chemical/[T-62] Titanium(Ⅲ) chloride, 1mol;L.pdf"
+T-63,수산화 테트라부틸암모늄(10% 수용액),2052-49-5,TCI,시약실,T-63_tci.pdf,Tetrabutylammonium hydroxide TBAH,TCI/[T-63] Tetrabutylammonium Hydroxide.pdf
+U-04,우라실,66-22-8,삼전순약,시약실,U-04_samchun.pdf,Uracil,삼전순약/[U-04] Uracil.pdf
+V-02,발레로페논,1009-14-9,Sigma-Aldrich,시약실,V-02_sigma.pdf,Valerophenone,sigma-aldrich/[V-02] Valerophenone.pdf
+V-06,바닐린(녹는점 표준물질),121-33-5,Sigma-Aldrich,시약실,V-06_sigma.pdf,Vanillin,sigma-aldrich/[V-06] Vanillin melting point standard.pdf
+V-06,바닐린,121-33-5,Sigma-Aldrich,시약실,V-06_sigma_2.pdf,Vanillin,sigma-aldrich/[V-06] Vanillin.pdf
+X-01,자일렌,1330-20-7,대정화금,시약실,X-01_daejung.pdf,Xylene 크실렌,대정화금/[X-01] Xylene(1330-20-7)_R12.pdf
+X-01,자일렌,1330-20-7,삼전순약,시약실,X-01_samchun.pdf,Xylene 크실렌,삼전순약/[X-01] Xylene.pdf
+Z-02,아세트산아연 이수화물,5970-45-6,삼전순약,시약실,Z-02_samchun.pdf,Zinc acetate dihydrate 초산아연,삼전순약/[Z-02] Zinc acetate dihydrate.pdf
+Z-03,염화아연,7646-85-7,대정화금,시약실,Z-03_daejung.pdf,Zinc chloride,대정화금/[Z-03] Zinc chloride(7646-85-7)_1.pdf
+Z-04,산화아연,1314-13-2,삼전순약,시약실,Z-04_samchun.pdf,Zinc oxide,삼전순약/[Z-04] Zinc Oxide.pdf
+Z-06,황산아연 칠수화물,7446-20-0,삼전순약,시약실,Z-06_samchun.pdf,Zinc sulfate heptahydrate,삼전순약/[Z-06] Zinc Sulfate.pdf
+Z-07,황산아연 칠수화물,7446-20-0,대정화금,시약실,Z-07_daejung.pdf,Zinc sulfate heptahydrate,대정화금/[Z-07] Zinc sulfate heptahydrate(7446-20-0)_1.pdf
+Z-09,"아연(입상, 20 mesh)",7440-66-6,Thermo Fisher,시약실,Z-09_thermo.pdf,Zinc granular,Thermo/[Z-09] zinc granular 20 mesh.pdf
+Z-10,황산아연 0.02 mol/L 표준용액,7446-20-0,대정화금,시약실,Z-10_daejung.pdf,Zinc sulfate solution,대정화금/[Z-10] 0.02mol Zinc sulfate standard solution(0.04N)(2).pdf
+Z-11,황산아연 0.05 mol/L 용액,7446-20-0,삼전순약,시약실,Z-11_samchun.pdf,Zinc sulfate solution,삼전순약/[Z-11] 0.05M-Zinc Sulfate solution.pdf
+Z-12,아연 0.1 mol/L 표준용액,7440-66-6,대정화금,시약실,Z-12_daejung.pdf,Zinc standard solution,대정화금/[Z-12] 0.1mol Zinc standard solution(0.2N)(0).pdf
+,메틸렌 블루,122965-43-9,Acros Organics,시약실,NC-methylene-blue-high-purity-biological-st_acros.pdf,Methylene blue,"ACROS ORGANICS/Methylene Blue, high purity biological stain.pdf"
+,디미디움 브로마이드,518-67-2,Sigma-Aldrich,시약실,NC-dimidium-bromide_sigma.pdf,Dimidium bromide,sigma-aldrich/dimidium bromide.pdf
+,하이드로퀴논,123-31-9,Sigma-Aldrich,시약실,NC-hydroquinone_sigma.pdf,Hydroquinone,sigma-aldrich/hydroquinone.pdf
+,이소말트,64519-82-0,Sigma-Aldrich,시약실,NC-isomalt_sigma.pdf,Isomalt,sigma-aldrich/Isomalt.pdf
+,L-글루탐산,56-86-0,Sigma-Aldrich,시약실,NC-l-glutamic-acid_sigma.pdf,L-Glutamic acid,sigma-aldrich/L-Glutamic acid.pdf
+,메탄설폰산,75-75-2,Sigma-Aldrich,시약실,NC-methanesulfonic-acid_sigma.pdf,Methanesulfonic acid,sigma-aldrich/methanesulfonic acid.pdf
+,cis-11-에이코센산 메틸,2390-09-2,Sigma-Aldrich,시약실,NC-methyl-cis-11-eicosenoate_sigma.pdf,Methyl cis-11-eicosenoate,sigma-aldrich/Methyl cis-11-eicosenoate.pdf
+,N-아세틸-L-시스테인,616-91-1,Sigma-Aldrich,시약실,NC-n-acetyl-l-cysteine_sigma.pdf,N-Acetyl-L-cysteine,sigma-aldrich/N-Acetyl-L-cysteine.pdf
+,o-터페닐,84-15-1,Sigma-Aldrich,시약실,NC-o-terphenyl_sigma.pdf,o-Terphenyl,sigma-aldrich/O-terphenyl.pdf
+,페리시안화칼륨,13746-66-2,Sigma-Aldrich,시약실,NC-potassium-hexacyanoferrate_sigma.pdf,Potassium hexacyanoferrate(III) Potassium ferricyanide,sigma-aldrich/potassium hexacyanoferrate.pdf
+,아세트아미노펜,103-90-2,Supelco,시약실,NC-acetaminophen_supelco.pdf,Acetaminophen Paracetamol,Supelco/Acetaminophen.pdf
+,지방산 메틸에스터 혼합 표준물질,혼합물,Supelco,시약실,NC-f-a-m-e-mix_supelco.pdf,FAME mix,Supelco/F.A.M.E mix.pdf
+,레보플록사신 반수화물,138199-71-0,Supelco,시약실,NC-levofloxacin-hemihydrate_supelco.pdf,Levofloxacin hemihydrate,Supelco/Levofloxacin Hemihydrate.pdf
+,메조-에리트리톨,149-32-6,대정화금,시약실,NC-meso-erythritol_daejung.pdf,meso-Erythritol,대정화금/Meso-Erythritol.pdf
+,메틸하이드로퀴논,95-71-6,대정화금,시약실,NC-methylhydriquinone_daejung.pdf,Methylhydroquinone,대정화금/methylhydriquinone.pdf
