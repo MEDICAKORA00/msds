@@ -1,2 +1,21 @@
 ﻿코드,물질명,CAS번호,공급사,보관장소,파일명,별칭
 A-05,아세톤,67-64-1,대정화금,시약실,[A-05] Acetone(67-64-1)_1,acetone
+A-03,빙초산,64-19-7,대정화금,시약실,[A-03] Acetic acid glacial(2) (1),"아세트산, 초산, Acetic acid"
+A-04,무수아세트산,108-24-7,대정화금,시약실,[A-04] Acetic anhydride(108-24-7)_R10 (2),"아세트산 무수물, 무수초산, Acetic anhydride"
+A-08,P-아니스알데하이드,123-11-5,대정화금,시약실,[A-08] p-Anisaldehyde(123-11-5)_R2,"4-메톡시벤즈알데하이드, p-Anisaldehyde"
+A-23,품산암모늄,540-69-2,대정화금,시약실,[A-23] Ammonium formate(540-69-2)_1,"포름산암모늄, Ammonium formate"
+A-24,황산철(III)암모늄 심이수화물,7783-83-7,대정화금,시약실,[A-24] Ammonium iron(III) sulfate dodecahydrate(7783-83-7)_R7,"철명반, Ammonium iron(III) sulfate"
+A-28,인산수소이암모늄,7783-28-0,대정화금,시약실,[A-28] Ammonium phosphate dibasic(7783-28-0)_R9,"제2인산암모늄, Ammonium phosphate dibasic"
+A-29,인산이수소암모늄,7722-76-1,대정화금,시약실,[A-29] Ammonium phosphate monobasic(7722-76-1)_1,"제1인산암모늄, Ammonium phosphate monobasic"
+A-30,질산암모늄,6484-52-2,대정화금,시약실,[A-30] Ammonium nitrate(6484-52-2)_2 (CP GRADE),"	Ammonium nitrate"
+A-31,설팜산암모늄,7773-06-0,대정화금,시약실,[A-31] Ammonium sulfamate(7773-06-0) _1 (1),"술팜산암모늄, Ammonium sulfamate"
+A-49,L-(+)-아스코르브산,50-81-7,대정화금,시약실,[A-49] L-(+)-Ascorbic acid(50-81-7)_R8 (2),"비타민C, Ascorbic acid"
+A-85,알리자린 콤플렉손,455303-00-1,대정화금,시약실,[A-85] Alizarin Complexone(455303-00-1)_1,"	Alizarin complexone"
+A-86,황산철(III)암모늄 십이수화물,7783-83-7,대정화금,시약실,[A-86] Ammonium iron(III) sulfate dodecahydrate(7783-83-7)_R7 (1),"철명반, Ammonium iron(III) sulfate"
+B-01,완충용액 pH 4.01,-,대정화금,시약실,[B-01] Buffer solution pH 4.01_R7 (1),"	Buffer solution"
+B-02,완충용액 pH 7.00,-,대정화금,시약실,[B-02] Buffer solution pH 7.00_R11,"	Buffer solution"
+B-10,염화바륨 이수화물,10326-27-9,대정화금,시약실,[B-10] Barium chloride dihydrate(10326-27-9)_R10,"	Barium chloride"
+B-18,질산비스무트(III) 오수화물,10035-06-0,대정화금,시약실,[B-18] Bismuth(III) nitrate pentahydrate(0),Bismuth nitrate
+B-19,붕산,10043-35-3,대정화금,시약실,[B-19] Boric acid(10043-35-3)_R13,Boric acid
+B-36,N-브로모숙신이미드,128-08-5,대정화금,시약실,[B-36] N-Bromosuccinimide(0),"	NBS, N-Bromosuccinimide"
+B-47,완충용액 pH 10.01,-,대정화금,시약실,[B-47] Buffer solution pH 10.01_R6 (1),"	Buffer solution"
